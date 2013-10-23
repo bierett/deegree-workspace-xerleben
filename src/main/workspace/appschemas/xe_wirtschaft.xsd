@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" elementFormDefault="qualified" targetNamespace="http://www.xerleben.de" version="1.1">
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <include schemaLocation="xe_basic.xsd"/>
   <!--XML Schema document created by ShapeChange-->
   <element name="XE_Gewerbegebiet" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_GewerbegebietType"/>
   <complexType name="XE_GewerbegebietType">
