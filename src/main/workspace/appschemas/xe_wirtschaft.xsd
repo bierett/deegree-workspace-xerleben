@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" elementFormDefault="qualified" targetNamespace="http://www.xerleben.de" version="1.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="XE_Gewerbegebiet" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_GewerbegebietType"/>
+  <complexType name="XE_GewerbegebietType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_GewerbegebietPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Gewerbegebiet"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Unternehmen" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_UnternehmenType"/>
+  <complexType name="XE_UnternehmenType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_UnternehmenPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Unternehmen"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Gewerbeimmobilie" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_GewerbeimmobilieType"/>
+  <complexType name="XE_GewerbeimmobilieType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_GewerbeimmobiliePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Gewerbeimmobilie"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Unternehmen_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Unternehmen_InfoType"/>
+  <complexType name="XE_Unternehmen_InfoType">
+    <sequence>
+      <element name="branche" type="string"/>
+      <element default="WZ" name="verzeichnis" type="string"/>
+      <element default="2008" name="version" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Unternehmen_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Unternehmen_Info"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_VERFUEGBARKEITType">
+    <restriction base="string">
+      <enumeration value="NichtSofortVerfuegbar"/>
+      <enumeration value="NichtVerfuegbar"/>
+      <enumeration value="SofortVerfuegbar"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Gewerbeimmobilie_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Gewerbeimmobilie_InfoType"/>
+  <complexType name="XE_Gewerbeimmobilie_InfoType">
+    <sequence>
+      <element minOccurs="0" name="istKauf" type="boolean"/>
+      <element minOccurs="0" name="istMiete" type="boolean"/>
+      <element minOccurs="0" name="verfuegbarkeit" type="xe:EN_VERFUEGBARKEITType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Gewerbeimmobilie_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Gewerbeimmobilie_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Logistik" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_LogistikType"/>
+  <complexType name="XE_LogistikType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_LogistikPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Logistik"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Messe" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_MesseType"/>
+  <complexType name="XE_MesseType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_MessePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Messe"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

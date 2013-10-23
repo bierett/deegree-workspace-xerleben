@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" elementFormDefault="qualified" targetNamespace="http://www.xerleben.de" version="1.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <simpleType name="EN_STRECKENVARIANTEType">
+    <restriction base="string">
+      <enumeration value="Hauptstrecke"/>
+      <enumeration value="Alternativstrecke"/>
+      <enumeration value="Stichweg"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Wanderweg" substitutionGroup="xe:XE_Freizeitweg" type="xe:XE_WanderwegType"/>
+  <complexType name="XE_WanderwegType">
+    <complexContent>
+      <extension base="xe:XE_FreizeitwegType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_WanderwegPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Wanderweg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_LWG_WEGABSCHNITTType">
+    <restriction base="string">
+      <enumeration value="AufEigenstaendigemPfad"/>
+      <enumeration value="AufForstLandwirtschaftsweg"/>
+      <enumeration value="AufFusswegFussgaengerzone"/>
+      <enumeration value="AufOeffStrasseMarkiert"/>
+      <enumeration value="AufOeffStrasseOhneBegleitweg"/>
+      <enumeration value="NebenOeffStrasseAufBegleitweg"/>
+      <enumeration value="Unbekannt"/>
+      <enumeration value="VerkehrsberuhigterBereich"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Streckenvariante" substitutionGroup="xe:XE_Freizeitweg" type="xe:XE_StreckenvarianteType"/>
+  <complexType name="XE_StreckenvarianteType">
+    <complexContent>
+      <extension base="xe:XE_FreizeitwegType">
+        <sequence>
+          <element name="wegStreckenvariante" type="xe:EN_STRECKENVARIANTEType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_StreckenvariantePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Streckenvariante"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_SonstigerFreizeitweg" substitutionGroup="xe:XE_Freizeitweg" type="xe:XE_SonstigerFreizeitwegType"/>
+  <complexType name="XE_SonstigerFreizeitwegType">
+    <complexContent>
+      <extension base="xe:XE_FreizeitwegType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_SonstigerFreizeitwegPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_SonstigerFreizeitweg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Reitweg" substitutionGroup="xe:XE_Freizeitweg" type="xe:XE_ReitwegType"/>
+  <complexType name="XE_ReitwegType">
+    <complexContent>
+      <extension base="xe:XE_FreizeitwegType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_ReitwegPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Reitweg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_ZST_WEGABSCHNITTType">
+    <restriction base="string">
+      <enumeration value="GlattBefestigt"/>
+      <enumeration value="GrobBefestigt"/>
+      <enumeration value="Unbefestigt"/>
+      <enumeration value="Unbekannt"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="EN_BSM_WEGABSCHNITTType">
+    <restriction base="string">
+      <enumeration value="LandschaftlichReizvoll"/>
+      <enumeration value="Rollstuhlgerecht"/>
+      <enumeration value="SteigungBedeutend"/>
+      <enumeration value="VerkehrsbelastungStark"/>
+      <enumeration value="WegstreckeGefaehrlich"/>
+      <enumeration value="WegstreckeSchwierig"/>
+    </restriction>
+  </simpleType>
+  <element abstract="true" name="XE_Freizeitweg" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_FreizeitwegType"/>
+  <complexType abstract="true" name="XE_FreizeitwegType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence>
+          <element minOccurs="0" name="wegSchluessel" type="string"/>
+          <element minOccurs="0" name="wegBezeichnung" type="string"/>
+          <element minOccurs="0" name="wegVerlauf" type="string"/>
+          <element minOccurs="0" name="wegVariante" type="xe:EN_STRECKENVARIANTEType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_FreizeitwegPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Freizeitweg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Lehrpfad" substitutionGroup="xe:XE_Freizeitweg" type="xe:XE_LehrpfadType"/>
+  <complexType name="XE_LehrpfadType">
+    <complexContent>
+      <extension base="xe:XE_FreizeitwegType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_LehrpfadPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Lehrpfad"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Radwanderweg" substitutionGroup="xe:XE_Freizeitweg" type="xe:XE_RadwanderwegType"/>
+  <complexType name="XE_RadwanderwegType">
+    <complexContent>
+      <extension base="xe:XE_FreizeitwegType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_RadwanderwegPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Radwanderweg"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_UGR_WEGABSCHNITTType">
+    <restriction base="string">
+      <enumeration value="Gras"/>
+      <enumeration value="Mulch"/>
+      <enumeration value="Boden"/>
+      <enumeration value="Sand"/>
+      <enumeration value="Splitt"/>
+      <enumeration value="Schotter"/>
+      <enumeration value="Geroell"/>
+      <enumeration value="Pflaster"/>
+      <enumeration value="Kopfsteinpflaster"/>
+      <enumeration value="WassergebundeneDecke"/>
+      <enumeration value="Asphalt"/>
+      <enumeration value="Beton"/>
+      <enumeration value="Fels"/>
+      <enumeration value="Eis"/>
+      <enumeration value="Schnee"/>
+      <enumeration value="Wasser"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Traegerabschnitt" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_TraegerabschnittType"/>
+  <complexType name="XE_TraegerabschnittType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_TraegerabschnittPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Traegerabschnitt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Wegabschnitt" substitutionGroup="gml:AbstractFeature" type="xe:XE_WegabschnittType"/>
+  <complexType name="XE_WegabschnittType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="objektUUID" type="string"/>
+          <element name="abschnittVerlauf" type="gml:CurvePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="abschnittBesMerkmal" type="xe:EN_BSM_WEGABSCHNITTType"/>
+          <element minOccurs="0" name="abschnittLage" type="xe:EN_LWG_WEGABSCHNITTType"/>
+          <element minOccurs="0" name="abschnittZustand" type="xe:EN_ZST_WEGABSCHNITTType"/>
+          <element name="abschnittUntergrund" type="xe:EN_UGR_WEGABSCHNITTType"/>
+          <element name="metaInfoquelle" type="string"/>
+          <element name="metaPflegendeStelle" type="string"/>
+          <element name="metaLebenszeitStart" type="dateTime"/>
+          <element name="metaLebenszeitEnde" type="dateTime"/>
+          <element name="metaGueltigStart" type="dateTime"/>
+          <element name="metaGueltigEnde" type="dateTime"/>
+          <element name="metaZuletztBearbeitetAm" type="dateTime"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="gehoertZuTraegerabschnitt" type="xe:XE_TraegerabschnittPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="verweis" type="xe:XE_Externe_InfoPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="gehoertZuFreizeitweg" type="xe:XE_FreizeitwegPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_WegabschnittPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Wegabschnitt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

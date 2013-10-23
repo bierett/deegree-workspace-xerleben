@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" elementFormDefault="qualified" targetNamespace="http://www.xerleben.de" version="1.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="XE_Person" substitutionGroup="gml:AbstractObject" type="xe:XE_PersonType"/>
+  <complexType name="XE_PersonType">
+    <sequence>
+      <element minOccurs="0" name="anrede" type="string"/>
+      <element minOccurs="0" name="titel" type="string"/>
+      <element name="name" type="string"/>
+      <element minOccurs="0" name="vorname" type="string"/>
+      <element minOccurs="0" name="firma" type="string"/>
+      <element minOccurs="0" name="adresse" type="xe:XE_AdressePropertyType"/>
+      <element minOccurs="0" name="postfachadresse" type="xe:XE_PostfachadressePropertyType"/>
+      <element minOccurs="0" name="email" type="string"/>
+      <element minOccurs="0" name="telefon" type="xe:XE_TelefonPropertyType"/>
+      <element minOccurs="0" name="fax" type="xe:XE_TelefonPropertyType"/>
+      <element minOccurs="0" name="mobil" type="xe:XE_TelefonPropertyType"/>
+      <element minOccurs="0" name="url" type="anyURI"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_PersonPropertyType">
+    <sequence>
+      <element ref="xe:XE_Person"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Oeffnungszeiten" substitutionGroup="gml:AbstractObject" type="xe:XE_OeffnungszeitenType"/>
+  <complexType name="XE_OeffnungszeitenType">
+    <sequence>
+      <element minOccurs="0" name="montag1_von" type="time"/>
+      <element minOccurs="0" name="montag1_bis" type="time"/>
+      <element minOccurs="0" name="montag2_von" type="time"/>
+      <element minOccurs="0" name="montag2_bis" type="time"/>
+      <element minOccurs="0" name="dienstag1_von" type="time"/>
+      <element minOccurs="0" name="dienstag1_bis" type="time"/>
+      <element minOccurs="0" name="dienstag2_von" type="time"/>
+      <element minOccurs="0" name="dienstag2_bis" type="time"/>
+      <element minOccurs="0" name="mittwoch1_von" type="time"/>
+      <element minOccurs="0" name="mittwoch1_bis" type="time"/>
+      <element minOccurs="0" name="mittwoch2_von" type="time"/>
+      <element minOccurs="0" name="mittwoch2_bis" type="time"/>
+      <element minOccurs="0" name="donnerstag1_von" type="time"/>
+      <element minOccurs="0" name="donnerstag1_bis" type="time"/>
+      <element minOccurs="0" name="donnerstag2_von" type="time"/>
+      <element minOccurs="0" name="donnerstag2_bis" type="time"/>
+      <element minOccurs="0" name="freitag1_von" type="time"/>
+      <element minOccurs="0" name="freitag1_bis" type="time"/>
+      <element minOccurs="0" name="freitag2_von" type="time"/>
+      <element minOccurs="0" name="freitag2_bis" type="time"/>
+      <element minOccurs="0" name="samstag1_von" type="time"/>
+      <element minOccurs="0" name="samstag1_bis" type="time"/>
+      <element minOccurs="0" name="samstag2_von" type="time"/>
+      <element minOccurs="0" name="samstag2_bis" type="time"/>
+      <element minOccurs="0" name="sonntag1_von" type="time"/>
+      <element minOccurs="0" name="sonntag1_bis" type="time"/>
+      <element minOccurs="0" name="sonntag2_von" type="time"/>
+      <element minOccurs="0" name="sonntag2_bis" type="time"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_OeffnungszeitenPropertyType">
+    <sequence>
+      <element ref="xe:XE_Oeffnungszeiten"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Externe_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Externe_InfoType"/>
+  <complexType name="XE_Externe_InfoType">
+    <sequence>
+      <element minOccurs="0" name="beschreibung" type="string"/>
+      <element name="externeInfo" type="string"/>
+      <element name="infoArt" type="xe:EN_INFOARTType"/>
+      <element minOccurs="0" name="mimetype" type="string"/>
+      <element minOccurs="0" name="namensraum" type="string"/>
+      <element minOccurs="0" name="titel" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Externe_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Externe_Info"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_ASP_ROLLEType">
+    <restriction base="string">
+      <enumeration value="Leitung"/>
+      <enumeration value="Hausmeister"/>
+      <enumeration value="Sekretariat"/>
+      <enumeration value="Sonstiges"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_OrtVonInteresse" substitutionGroup="gml:AbstractFeature" type="xe:XE_OrtVonInteresseType"/>
+  <complexType name="XE_OrtVonInteresseType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="lageAnfasspunkt" type="gml:PointPropertyType"/>
+          <element name="metaInfoquelle" type="string"/>
+          <element name="metaLebenszeitStart" type="dateTime"/>
+          <element name="metaPflegendeStelle" type="string"/>
+          <element name="metaZuletztBearbeitetAm" type="dateTime"/>
+          <element name="objektCode" type="integer"/>
+          <element name="objektFunktion" type="string"/>
+          <element name="objektKategorie" type="string"/>
+          <element minOccurs="0" name="objektThesaurusVersion" type="string"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="objektWeitereFunktion" type="string"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="objektWeitererCode" type="integer"/>
+          <element name="objektUUID" type="string"/>
+          <element name="objektName" type="string"/>
+          <element minOccurs="0" name="objektNamenszusatz" type="string"/>
+          <element minOccurs="0" name="objektAdresse" type="xe:XE_AdressePropertyType"/>
+          <element minOccurs="0" name="objektPostfachadresse" type="xe:XE_PostfachadressePropertyType"/>
+          <element minOccurs="0" name="objektEmail" type="string"/>
+          <element minOccurs="0" name="objektTelefon" type="xe:XE_TelefonPropertyType"/>
+          <element minOccurs="0" name="objektFax" type="xe:XE_TelefonPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="objektSynonym" type="string"/>
+          <element minOccurs="0" name="besuchAngebot" type="string"/>
+          <element minOccurs="0" name="besuchImbiss" type="string"/>
+          <element minOccurs="0" name="besuchIstKostenpflichtig" type="boolean"/>
+          <element minOccurs="0" name="besuchKosten" type="string"/>
+          <element minOccurs="0" name="besuchIstOeffentlich" type="boolean"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="besuchOeffnungszeiten" type="xe:XE_OeffnungszeitenPropertyType"/>
+          <element minOccurs="0" name="besuchOeffungText" type="string"/>
+          <element minOccurs="0" name="infoBeschreibung" type="string"/>
+          <element minOccurs="0" name="infoExterneInfo" type="anyURI"/>
+          <element minOccurs="0" name="infoFlaecheM2" type="double"/>
+          <element minOccurs="0" name="infoLaengeM" type="double"/>
+          <element minOccurs="0" name="infoStatus" type="xe:EN_BETRIEBSSTATUSType"/>
+          <element minOccurs="0" name="infoTraegerart" type="xe:EN_TRAEGERARTType"/>
+          <element minOccurs="0" name="infoVeranstaltung" type="string"/>
+          <element minOccurs="0" name="infoZusatzinfo" type="string"/>
+          <element minOccurs="0" name="klassifizierungBedeutung" type="xe:EN_KLASS_BEDEUTUNGType"/>
+          <element minOccurs="0" name="klassifizierungTourismus" type="xe:EN_KLASS_TOURISMUSType"/>
+          <element minOccurs="0" name="lageFlaeche" type="gml:SurfacePropertyType"/>
+          <element minOccurs="0" name="lageHoeheNHN" type="double"/>
+          <element minOccurs="0" name="lageHoeheUeberGrund" type="double"/>
+          <element minOccurs="0" name="lagePunktmenge" type="gml:MultiPointPropertyType"/>
+          <element minOccurs="0" name="lageVerlauf" type="gml:CurvePropertyType"/>
+          <element minOccurs="0" name="metaInfodatum" type="dateTime"/>
+          <element minOccurs="0" name="metaGueltigEnde" type="dateTime"/>
+          <element minOccurs="0" name="metaGueltigStart" type="dateTime"/>
+          <element minOccurs="0" name="metaLebenszeitEnde" type="dateTime"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="metaSchluesselwort" type="string"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="ansprechpartner" type="xe:XE_AnsprechpartnerPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="bez" type="xe:XE_OviBeziehungPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="barrierefreiFuer" type="xe:XE_Barrierefreiheit_InfoPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="praedikat" type="xe:XE_PraedikatPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="verweis" type="xe:XE_Externe_InfoPropertyType"/>
+          <element minOccurs="0" name="hatTraeger" type="xe:XE_OrtVonInteressePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="zielgruppe" type="xe:XE_ZielgruppePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_OrtVonInteressePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_OrtVonInteresse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Adresse" substitutionGroup="gml:AbstractObject" type="xe:XE_AdresseType"/>
+  <complexType name="XE_AdresseType">
+    <sequence>
+      <element minOccurs="0" name="strasse" type="string"/>
+      <element minOccurs="0" name="hausnr" type="string"/>
+      <element minOccurs="0" name="ortsteil" type="string"/>
+      <element minOccurs="0" name="plz" type="string"/>
+      <element name="ort" type="string"/>
+      <element minOccurs="0" name="land" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_AdressePropertyType">
+    <sequence>
+      <element ref="xe:XE_Adresse"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_INFOARTType">
+    <restriction base="string">
+      <enumeration value="Geometrie"/>
+      <enumeration value="Bild"/>
+      <enumeration value="Video"/>
+      <enumeration value="Audio"/>
+      <enumeration value="Dokument"/>
+      <enumeration value="Buchung"/>
+      <enumeration value="Website"/>
+      <enumeration value="Datenbankobjekt"/>
+      <enumeration value="Sonstiges"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Postfachadresse" substitutionGroup="gml:AbstractObject" type="xe:XE_PostfachadresseType"/>
+  <complexType name="XE_PostfachadresseType">
+    <sequence>
+      <element name="postfach" type="string"/>
+      <element minOccurs="0" name="plz" type="string"/>
+      <element minOccurs="0" name="ort" type="string"/>
+      <element minOccurs="0" name="land" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_PostfachadressePropertyType">
+    <sequence>
+      <element ref="xe:XE_Postfachadresse"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Sammlung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_SammlungType"/>
+  <complexType name="XE_SammlungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_SammlungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Sammlung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_OviBeziehung" substitutionGroup="gml:AbstractObject" type="xe:XE_OviBeziehungType"/>
+  <complexType name="XE_OviBeziehungType">
+    <sequence>
+      <element name="beziehungsart" type="xe:EN_OVIBEZIEHUNGType"/>
+      <element name="bez" type="xe:XE_OrtVonInteressePropertyType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_OviBeziehungPropertyType">
+    <sequence>
+      <element ref="xe:XE_OviBeziehung"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_OVIBEZIEHUNGType">
+    <restriction base="string">
+      <enumeration value="hatVeranstaltungsort"/>
+      <enumeration value="IstNachbarVon"/>
+      <enumeration value="IstFilialeVon"/>
+      <enumeration value="IstBestandteilVon"/>
+      <enumeration value="IstInDerNaeheVon"/>
+      <enumeration value="IstAehnlichWie"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Barrierefreiheit_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Barrierefreiheit_InfoType"/>
+  <complexType name="XE_Barrierefreiheit_InfoType">
+    <sequence>
+      <element name="barriereText" type="string"/>
+      <element name="gruppenart" type="xe:EN_BARRIEREGRUPPEType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Barrierefreiheit_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Barrierefreiheit_Info"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_TRAEGERARTType">
+    <restriction base="string">
+      <enumeration value="Bund"/>
+      <enumeration value="Gewerblich"/>
+      <enumeration value="Kirchlich"/>
+      <enumeration value="Kommunal"/>
+      <enumeration value="Land"/>
+      <enumeration value="Privat"/>
+      <enumeration value="VereinVerband"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Ansprechpartner" substitutionGroup="gml:AbstractObject" type="xe:XE_AnsprechpartnerType"/>
+  <complexType name="XE_AnsprechpartnerType">
+    <sequence>
+      <element name="person" type="xe:XE_PersonPropertyType"/>
+      <element minOccurs="0" name="rolle" type="xe:EN_ASP_ROLLEType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_AnsprechpartnerPropertyType">
+    <sequence>
+      <element ref="xe:XE_Ansprechpartner"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_ZIELGRUPPEType">
+    <restriction base="string">
+      <enumeration value="Arbeitslose"/>
+      <enumeration value="AuslaendischeMitbuerger"/>
+      <enumeration value="Behinderte"/>
+      <enumeration value="Familien"/>
+      <enumeration value="Frauen"/>
+      <enumeration value="Jeder"/>
+      <enumeration value="Jugendliche"/>
+      <enumeration value="Kinder"/>
+      <enumeration value="Landwirte"/>
+      <enumeration value="Maenner"/>
+      <enumeration value="Obdachlose"/>
+      <enumeration value="Pflegebeduerftige"/>
+      <enumeration value="Senioren"/>
+      <enumeration value="Sonstige"/>
+      <enumeration value="SozialSchwache"/>
+      <enumeration value="Suechtige"/>
+      <enumeration value="Touristen"/>
+      <enumeration value="Verbraucher"/>
+      <enumeration value="AktiveBestager"/>
+      <enumeration value="Autofahrer"/>
+      <enumeration value="ErwachseneSingles"/>
+      <enumeration value="Geschaeftsreisende"/>
+      <enumeration value="JederTourist"/>
+      <enumeration value="JungeSinglesPaare"/>
+      <enumeration value="TraditionelleBestager"/>
+      <enumeration value="Wanderer"/>
+      <enumeration value="Skifahrer"/>
+      <enumeration value="Reiter"/>
+      <enumeration value="Radfahrer"/>
+      <enumeration value="Mountainbiker"/>
+      <enumeration value="Motorradfahrer"/>
+      <enumeration value="Inlinefahrer"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Telefon" substitutionGroup="gml:AbstractObject" type="xe:XE_TelefonType"/>
+  <complexType name="XE_TelefonType">
+    <sequence>
+      <element name="vorwahlInternational" type="integer"/>
+      <element name="vorwahl" type="integer"/>
+      <element name="ortsanschluss" type="integer"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_TelefonPropertyType">
+    <sequence>
+      <element ref="xe:XE_Telefon"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_KLASS_BEDEUTUNGType">
+    <restriction base="string">
+      <enumeration value="Lokal"/>
+      <enumeration value="Regional"/>
+      <enumeration value="Ueberregional"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Zielgruppe" substitutionGroup="gml:AbstractObject" type="xe:XE_ZielgruppeType"/>
+  <complexType name="XE_ZielgruppeType">
+    <sequence>
+      <element name="zielgruppe" type="xe:EN_ZIELGRUPPEType"/>
+      <element name="zielgruppeText" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_ZielgruppePropertyType">
+    <sequence>
+      <element ref="xe:XE_Zielgruppe"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_BARRIEREGRUPPEType">
+    <restriction base="string">
+      <enumeration value="BlindeMenschen"/>
+      <enumeration value="Familien"/>
+      <enumeration value="GehbehinderteMenschen"/>
+      <enumeration value="GehoerloseMenschen"/>
+      <enumeration value="Kinderwagen"/>
+      <enumeration value="MenschenMitHoerbehinderung"/>
+      <enumeration value="MenschenMitLernschwierigkeiten"/>
+      <enumeration value="Rollator"/>
+      <enumeration value="Rollstuhlfahrer"/>
+      <enumeration value="SehbehinderteMenschen"/>
+      <enumeration value="Senioren"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="EN_KLASS_TOURISMUSType">
+    <restriction base="string">
+      <enumeration value="Lokalsehenswert"/>
+      <enumeration value="Regionalsehenswert"/>
+      <enumeration value="Ueberregionalsehenswert"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Praedikat" substitutionGroup="gml:AbstractObject" type="xe:XE_PraedikatType"/>
+  <complexType name="XE_PraedikatType">
+    <sequence>
+      <element minOccurs="0" name="bezeichnung" type="string"/>
+      <element minOccurs="0" name="bewertungNumerisch" type="integer"/>
+      <element minOccurs="0" name="bewertungEinheit" type="string"/>
+      <element minOccurs="0" name="bewertungText" type="string"/>
+      <element minOccurs="0" name="gueltigBis" type="date"/>
+      <element minOccurs="0" name="institution" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_PraedikatPropertyType">
+    <sequence>
+      <element ref="xe:XE_Praedikat"/>
+    </sequence>
+  </complexType>
+  <element name="GM_Point" substitutionGroup="gml:AbstractObject" type="xe:GM_PointType"/>
+  <complexType name="GM_PointType">
+    <sequence/>
+  </complexType>
+  <complexType name="GM_PointPropertyType">
+    <sequence>
+      <element ref="xe:GM_Point"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_BETRIEBSSTATUSType">
+    <restriction base="string">
+      <enumeration value="Geplant"/>
+      <enumeration value="ImBau"/>
+      <enumeration value="InBetrieb"/>
+      <enumeration value="Stillgelegt"/>
+    </restriction>
+  </simpleType>
+</schema>

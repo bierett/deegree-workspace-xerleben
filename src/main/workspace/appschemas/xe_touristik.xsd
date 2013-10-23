@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" elementFormDefault="qualified" targetNamespace="http://www.xerleben.de" version="1.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="XE_Unterkunft" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_UnterkunftType"/>
+  <complexType name="XE_UnterkunftType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_UnterkunftPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Unterkunft"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Servicestelle" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_ServicestelleType"/>
+  <complexType name="XE_ServicestelleType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_ServicestellePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Servicestelle"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_GASTRONOMIE_KUECHEType">
+    <restriction base="string">
+      <enumeration value="Afghanisch"/>
+      <enumeration value="Afrikanisch"/>
+      <enumeration value="Amerikanisch"/>
+      <enumeration value="Asiatisch"/>
+      <enumeration value="Australisch"/>
+      <enumeration value="Ägyptisch"/>
+      <enumeration value="Balkanspezialitäten"/>
+      <enumeration value="Biergaststätte"/>
+      <enumeration value="Biokost"/>
+      <enumeration value="Brasilianisch"/>
+      <enumeration value="Chinesisch"/>
+      <enumeration value="Deutsch"/>
+      <enumeration value="Fischspezialitäten"/>
+      <enumeration value="Französisch"/>
+      <enumeration value="Gourmetrestaurant"/>
+      <enumeration value="Griechisch"/>
+      <enumeration value="Hähnchenbraterei"/>
+      <enumeration value="Indisch"/>
+      <enumeration value="Indonesisch"/>
+      <enumeration value="International"/>
+      <enumeration value="Iranisch"/>
+      <enumeration value="Italienisch"/>
+      <enumeration value="Japanisch"/>
+      <enumeration value="Jugoslawisch"/>
+      <enumeration value="Koreanisch"/>
+      <enumeration value="Kreolisch"/>
+      <enumeration value="Kroatisch"/>
+      <enumeration value="Libanesisch"/>
+      <enumeration value="Mediterran"/>
+      <enumeration value="Meeresfrüchte"/>
+      <enumeration value="Mexikanisch"/>
+      <enumeration value="Mittelalterlich"/>
+      <enumeration value="Mongolisch"/>
+      <enumeration value="Norwegisch"/>
+      <enumeration value="Österreichisch"/>
+      <enumeration value="Persisch"/>
+      <enumeration value="RegionaleSpezialitäten"/>
+      <enumeration value="Rumänisch"/>
+      <enumeration value="Schweizerisch"/>
+      <enumeration value="Spanisch"/>
+      <enumeration value="Steakhaus"/>
+      <enumeration value="Sushi"/>
+      <enumeration value="Südamerikanisch"/>
+      <enumeration value="Thailändisch"/>
+      <enumeration value="Türkisch"/>
+      <enumeration value="Ungarisch"/>
+      <enumeration value="Vegetarisch"/>
+      <enumeration value="Vietnamesisch"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Gastronomie" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_GastronomieType"/>
+  <complexType name="XE_GastronomieType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_GastronomiePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Gastronomie"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Rast" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_RastType"/>
+  <complexType name="XE_RastType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_RastPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Rast"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Gastronomie_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Gastronomie_InfoType"/>
+  <complexType name="XE_Gastronomie_InfoType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="kueche" type="xe:EN_GASTRONOMIE_KUECHEType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Gastronomie_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Gastronomie_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Shopping" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_ShoppingType"/>
+  <complexType name="XE_ShoppingType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_ShoppingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Shopping"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

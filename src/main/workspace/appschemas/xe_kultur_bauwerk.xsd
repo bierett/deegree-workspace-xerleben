@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" elementFormDefault="qualified" targetNamespace="http://www.xerleben.de" version="1.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="XE_Museum" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_MuseumType"/>
+  <complexType name="XE_MuseumType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_MuseumPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Museum"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Nachtleben" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_NachtlebenType"/>
+  <complexType name="XE_NachtlebenType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_NachtlebenPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Nachtleben"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_BLICKWINKELType">
+    <restriction base="string">
+      <enumeration value="Dreiviertelkreis"/>
+      <enumeration value="Halbkreis"/>
+      <enumeration value="Viertelkreis"/>
+      <enumeration value="Vollkreis"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="EN_NUTZUNGSSTATUSType">
+    <restriction base="string">
+      <enumeration value="AndersGenutzt"/>
+      <enumeration value="NichtGenutzt"/>
+      <enumeration value="UrspruenglichGenutzt"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Siedlung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_SiedlungType"/>
+  <complexType name="XE_SiedlungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_SiedlungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Siedlung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Kultureinrichtung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_KultureinrichtungType"/>
+  <complexType name="XE_KultureinrichtungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_KultureinrichtungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Kultureinrichtung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Gotteshaus" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_GotteshausType"/>
+  <complexType name="XE_GotteshausType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_GotteshausPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Gotteshaus"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Aussichtspunkt" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_AussichtspunktType"/>
+  <complexType name="XE_AussichtspunktType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_AussichtspunktPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Aussichtspunkt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Bauwerk_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Bauwerk_InfoType"/>
+  <complexType name="XE_Bauwerk_InfoType">
+    <sequence>
+      <element minOccurs="0" name="istBedeutendeArchitektur" type="boolean"/>
+      <element minOccurs="0" name="istDenkmal" type="boolean"/>
+      <element minOccurs="0" name="istIndustriedenkmal" type="boolean"/>
+      <element minOccurs="0" name="istRuine" type="boolean"/>
+      <element minOccurs="0" name="nutzungsstatus" type="xe:EN_NUTZUNGSSTATUSType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Bauwerk_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Bauwerk_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Religioeses_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Religioeses_InfoType"/>
+  <complexType name="XE_Religioeses_InfoType">
+    <sequence>
+      <element minOccurs="0" name="istWallfahrtsstaette" type="boolean"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Religioeses_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Religioeses_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_TechnischesBauwerk" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_TechnischesBauwerkType"/>
+  <complexType name="XE_TechnischesBauwerkType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_TechnischesBauwerkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_TechnischesBauwerk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Museum_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Museum_InfoType"/>
+  <complexType name="XE_Museum_InfoType">
+    <sequence>
+      <element minOccurs="0" name="istFreilichtmuseum" type="boolean"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Museum_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Museum_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Bauwerk" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_BauwerkType"/>
+  <complexType name="XE_BauwerkType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_BauwerkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Bauwerk"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Denkmal" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_DenkmalType"/>
+  <complexType name="XE_DenkmalType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_DenkmalPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Denkmal"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Religioeses" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_ReligioesesType"/>
+  <complexType name="XE_ReligioesesType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_ReligioesesPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Religioeses"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Aussichtspunkt_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Aussichtspunkt_InfoType"/>
+  <complexType name="XE_Aussichtspunkt_InfoType">
+    <sequence>
+      <element minOccurs="0" name="blickwinkel" type="xe:EN_BLICKWINKELType"/>
+      <element minOccurs="0" name="blickrichtung" type="xe:EN_BLICKRICHTUNGType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Aussichtspunkt_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Aussichtspunkt_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Kino" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_KinoType"/>
+  <complexType name="XE_KinoType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_KinoPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Kino"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Landmarke" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_LandmarkeType"/>
+  <complexType name="XE_LandmarkeType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_LandmarkePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Landmarke"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_TheaterMusik" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_TheaterMusikType"/>
+  <complexType name="XE_TheaterMusikType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_TheaterMusikPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_TheaterMusik"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_BLICKRICHTUNGType">
+    <restriction base="string">
+      <enumeration value="Nord"/>
+      <enumeration value="Nordost"/>
+      <enumeration value="Nordwest"/>
+      <enumeration value="Ost"/>
+      <enumeration value="Sued"/>
+      <enumeration value="Suedost"/>
+      <enumeration value="Suedwest"/>
+      <enumeration value="West"/>
+    </restriction>
+  </simpleType>
+</schema>

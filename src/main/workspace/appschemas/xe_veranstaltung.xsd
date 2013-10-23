@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" elementFormDefault="qualified" targetNamespace="http://www.xerleben.de" version="1.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="XE_Veranstaltung_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Veranstaltung_InfoType"/>
+  <complexType name="XE_Veranstaltung_InfoType">
+    <sequence>
+      <element minOccurs="0" name="vonDatum" type="date"/>
+      <element minOccurs="0" name="bisDatum" type="date"/>
+      <element minOccurs="0" name="vonZeit" type="time"/>
+      <element minOccurs="0" name="bisZeit" type="time"/>
+      <element minOccurs="0" name="turnus" type="xe:EN_TURNUSType"/>
+      <element minOccurs="0" name="turnustext" type="string"/>
+      <element maxOccurs="7" minOccurs="0" name="turnustag" type="xe:EN_TURNUSTAGType"/>
+      <element minOccurs="0" name="verkehrstext" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Veranstaltung_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Veranstaltung_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Veranstaltungsort" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_VeranstaltungsortType"/>
+  <complexType name="XE_VeranstaltungsortType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_VeranstaltungsortPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Veranstaltungsort"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_TURNUSType">
+    <restriction base="string">
+      <enumeration value="Jaehrlich"/>
+      <enumeration value="Monatlich"/>
+      <enumeration value="Taeglich"/>
+      <enumeration value="Woechentlich"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Veranstaltung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_VeranstaltungType"/>
+  <complexType name="XE_VeranstaltungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_VeranstaltungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Veranstaltung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Veranstaltungsort_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Veranstaltungsort_InfoType"/>
+  <complexType name="XE_Veranstaltungsort_InfoType">
+    <sequence>
+      <element minOccurs="0" name="anzPersonenMax" type="integer"/>
+      <element minOccurs="0" name="anzRaeume" type="integer"/>
+      <element minOccurs="0" name="hatKochgelegenheit" type="boolean"/>
+      <element minOccurs="0" name="istTagungsort" type="boolean"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Veranstaltungsort_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Veranstaltungsort_Info"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_TURNUSTAGType">
+    <restriction base="string">
+      <enumeration value="Dienstag"/>
+      <enumeration value="Donnerstag"/>
+      <enumeration value="Freitag"/>
+      <enumeration value="Mittwoch"/>
+      <enumeration value="Montag"/>
+      <enumeration value="Samstag"/>
+      <enumeration value="Sonntag"/>
+    </restriction>
+  </simpleType>
+</schema>

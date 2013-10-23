@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" elementFormDefault="qualified" targetNamespace="http://www.xerleben.de" version="1.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="XE_Baden" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_BadenType"/>
+  <complexType name="XE_BadenType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_BadenPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Baden"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_INDOOR_OUTDOORType">
+    <restriction base="string">
+      <enumeration value="Indoor"/>
+      <enumeration value="InOutdoor"/>
+      <enumeration value="Outdoor"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Wegweisung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_WegweisungType"/>
+  <complexType name="XE_WegweisungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_WegweisungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Wegweisung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_NaturLandschaft_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_NaturLandschaft_InfoType"/>
+  <complexType name="XE_NaturLandschaft_InfoType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="naturschutzstatus" type="xe:EN_NATURSCHUTZSTATUSType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_NaturLandschaft_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_NaturLandschaft_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Sport_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Sport_InfoType"/>
+  <complexType name="XE_Sport_InfoType">
+    <sequence>
+      <element minOccurs="0" name="indoorOutdoor" type="xe:EN_INDOOR_OUTDOORType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Sport_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Sport_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Erholung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_ErholungType"/>
+  <complexType name="XE_ErholungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_ErholungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Erholung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Moeblierung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_MoeblierungType"/>
+  <complexType name="XE_MoeblierungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_MoeblierungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Moeblierung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_NATURSCHUTZSTATUSType">
+    <restriction base="string">
+      <enumeration value="Biosphaerenreservat"/>
+      <enumeration value="FFHGebiet"/>
+      <enumeration value="GeschuetzterLandschaftsbestandteil"/>
+      <enumeration value="GeschuetztesBiotop"/>
+      <enumeration value="Landschaftsschutzgebiet"/>
+      <enumeration value="Nationales Naturmonument"/>
+      <enumeration value="Nationalpark"/>
+      <enumeration value="Naturdenkmal"/>
+      <enumeration value="Naturpark"/>
+      <enumeration value="Naturschutzgebiet"/>
+      <enumeration value="Naturwaldzelle"/>
+      <enumeration value="Vogelschutzgebiet"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_NaturLandschaft" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_NaturLandschaftType"/>
+  <complexType name="XE_NaturLandschaftType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_NaturLandschaftPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_NaturLandschaft"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_ART_BESCHILDERUNGType">
+    <restriction base="string">
+      <enumeration value="BeschilderungSonstiges"/>
+      <enumeration value="Informationstafel"/>
+      <enumeration value="Knotenpunktwegweiser"/>
+      <enumeration value="Markierung"/>
+      <enumeration value="Wegweiser"/>
+      <enumeration value="WegweiserSTVO"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Sport" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_SportType"/>
+  <complexType name="XE_SportType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_SportPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Sport"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Tierwelt" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_TierweltType"/>
+  <complexType name="XE_TierweltType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_TierweltPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Tierwelt"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Wegweisung_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Wegweisung_InfoType"/>
+  <complexType name="XE_Wegweisung_InfoType">
+    <sequence>
+      <element minOccurs="0" name="schilderart" type="xe:EN_ART_BESCHILDERUNGType"/>
+      <element minOccurs="0" name="schilderkatasterName" type="string"/>
+      <element minOccurs="0" name="schildernummer" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Wegweisung_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Wegweisung_Info"/>
+    </sequence>
+  </complexType>
+</schema>

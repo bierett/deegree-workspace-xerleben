@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" elementFormDefault="qualified" targetNamespace="http://www.xerleben.de" version="1.1">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange-->
+  <element name="XE_Autoverkehr_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Autoverkehr_InfoType"/>
+  <complexType name="XE_Autoverkehr_InfoType">
+    <sequence>
+      <element minOccurs="0" name="besuchHatWC" type="boolean"/>
+      <element minOccurs="0" name="istBewacht" type="boolean"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Autoverkehr_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Autoverkehr_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_OEVHaltestelle_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_OEVHaltestelle_InfoType"/>
+  <complexType name="XE_OEVHaltestelle_InfoType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="liniennummer" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_OEVHaltestelle_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_OEVHaltestelle_Info"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_AMBULANTSTATIONAERType">
+    <restriction base="string">
+      <enumeration value="Ambulant"/>
+      <enumeration value="AmbulantStationaer"/>
+      <enumeration value="Stationaer"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_SozialEinrichtung_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_SozialEinrichtung_InfoType"/>
+  <complexType name="XE_SozialEinrichtung_InfoType">
+    <sequence>
+      <element minOccurs="0" name="ambulantStationaer" type="xe:EN_AMBULANTSTATIONAERType"/>
+      <element maxOccurs="unbounded" minOccurs="0" name="sozialangebot" type="xe:EN_SOZIALANGEBOTType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_SozialEinrichtung_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_SozialEinrichtung_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_OEVTrasse" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_OEVTrasseType"/>
+  <complexType name="XE_OEVTrasseType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_OEVTrassePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_OEVTrasse"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Behoerde_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Behoerde_InfoType"/>
+  <complexType name="XE_Behoerde_InfoType">
+    <sequence>
+      <element minOccurs="0" name="adminebene" type="xe:EN_ADMINEBENEType"/>
+      <element minOccurs="0" name="nutsebene" type="xe:EN_NUTSEBENEType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Behoerde_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Behoerde_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Autoverkehr" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_AutoverkehrType"/>
+  <complexType name="XE_AutoverkehrType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_AutoverkehrPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Autoverkehr"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Mediathek" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_MediathekType"/>
+  <complexType name="XE_MediathekType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_MediathekPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Mediathek"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Gesundheit_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Gesundheit_InfoType"/>
+  <complexType name="XE_Gesundheit_InfoType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="fachgebiet" type="xe:EN_GESUND_FACHType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Gesundheit_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Gesundheit_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Verband" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_VerbandType"/>
+  <complexType name="XE_VerbandType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_VerbandPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Verband"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_VerEntsorgungsbetrieb_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_VerEntsorgungsbetrieb_InfoType"/>
+  <complexType name="XE_VerEntsorgungsbetrieb_InfoType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="fachgebiet" type="xe:EN_VERENTSORG_FACHType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_VerEntsorgungsbetrieb_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_VerEntsorgungsbetrieb_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Gefahrenstelle_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Gefahrenstelle_InfoType"/>
+  <complexType name="XE_Gefahrenstelle_InfoType">
+    <sequence>
+      <element name="gefahrengruppe" type="xe:EN_GEFAHRENGRUPPEType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Gefahrenstelle_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Gefahrenstelle_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Tankstelle" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_TankstelleType"/>
+  <complexType name="XE_TankstelleType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_TankstellePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Tankstelle"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Tiermedizin" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_TiermedizinType"/>
+  <complexType name="XE_TiermedizinType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_TiermedizinPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Tiermedizin"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Behoerde" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_BehoerdeType"/>
+  <complexType name="XE_BehoerdeType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_BehoerdePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Behoerde"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_VERENTSORG_FACHType">
+    <restriction base="string">
+      <enumeration value="Abfall"/>
+      <enumeration value="Abwasser"/>
+      <enumeration value="Gas"/>
+      <enumeration value="Strom"/>
+      <enumeration value="Telekommunikation"/>
+      <enumeration value="Waerme"/>
+      <enumeration value="Wasser"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_OEVLinie_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_OEVLinie_InfoType"/>
+  <complexType name="XE_OEVLinie_InfoType">
+    <sequence>
+      <element name="liniennummer" type="string"/>
+      <element minOccurs="0" name="hatFahrradmitnahme" type="boolean"/>
+      <element name="startHaltestelle" type="string"/>
+      <element name="endHaltestelle" type="string"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_OEVLinie_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_OEVLinie_Info"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_ADMINEBENEType">
+    <restriction base="string">
+      <enumeration value="Welt"/>
+      <enumeration value="EU"/>
+      <enumeration value="Bund"/>
+      <enumeration value="Kommune"/>
+      <enumeration value="Kreis"/>
+      <enumeration value="Land"/>
+      <enumeration value="Region"/>
+      <enumeration value="Regierungsbezirk"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="EN_SOZIALANGEBOTType">
+    <restriction base="string">
+      <enumeration value="Arbeit"/>
+      <enumeration value="Beratung"/>
+      <enumeration value="Betreuung"/>
+      <enumeration value="Bildung"/>
+      <enumeration value="Essen"/>
+      <enumeration value="Notruf"/>
+      <enumeration value="Pflege"/>
+      <enumeration value="Selbsthilfe"/>
+      <enumeration value="Therapie"/>
+      <enumeration value="Transport"/>
+      <enumeration value="Treffpunkt"/>
+      <enumeration value="Unterstuetzung"/>
+      <enumeration value="Wohnen"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Rettung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_RettungType"/>
+  <complexType name="XE_RettungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_RettungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Rettung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Tankstelle_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Tankstelle_InfoType"/>
+  <complexType name="XE_Tankstelle_InfoType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="betriebsstoff" type="xe:EN_BETRIEBSSTOFFType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Tankstelle_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Tankstelle_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Weiterbildung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_WeiterbildungType"/>
+  <complexType name="XE_WeiterbildungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_WeiterbildungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Weiterbildung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Wissenschaft" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_WissenschaftType"/>
+  <complexType name="XE_WissenschaftType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_WissenschaftPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Wissenschaft"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_GESUND_FACHType">
+    <restriction base="string">
+      <enumeration value="Allgemeinmedizin"/>
+      <enumeration value="Anaestesie"/>
+      <enumeration value="Augen"/>
+      <enumeration value="Chirurgie"/>
+      <enumeration value="Dermatologie"/>
+      <enumeration value="Geriatrie"/>
+      <enumeration value="Gynaekologie"/>
+      <enumeration value="HalsNasenOhren"/>
+      <enumeration value="InnereMedizin"/>
+      <enumeration value="Kardiologie"/>
+      <enumeration value="Kinder"/>
+      <enumeration value="Neurologie"/>
+      <enumeration value="Orthopaedie"/>
+      <enumeration value="Palliativmedizin"/>
+      <enumeration value="PsychiatrieSucht"/>
+      <enumeration value="Radiologie"/>
+      <enumeration value="Sportmedizin"/>
+      <enumeration value="Urologie"/>
+      <enumeration value="Zahnheilkunde"/>
+      <enumeration value="SonstigesFachgebiet"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_VerEntsorgungsbetrieb" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_VerEntsorgungsbetriebType"/>
+  <complexType name="XE_VerEntsorgungsbetriebType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_VerEntsorgungsbetriebPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_VerEntsorgungsbetrieb"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Gefahrenstelle" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_GefahrenstelleType"/>
+  <complexType name="XE_GefahrenstelleType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_GefahrenstellePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Gefahrenstelle"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Sammelstelle" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_SammelstelleType"/>
+  <complexType name="XE_SammelstelleType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_SammelstellePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Sammelstelle"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Militaer" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_MilitaerType"/>
+  <complexType name="XE_MilitaerType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_MilitaerPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Militaer"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_SchuleAllgemein" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_SchuleAllgemeinType"/>
+  <complexType name="XE_SchuleAllgemeinType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_SchuleAllgemeinPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_SchuleAllgemein"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_OEVTrasse_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_OEVTrasse_InfoType"/>
+  <complexType name="XE_OEVTrasse_InfoType">
+    <sequence>
+      <element minOccurs="0" name="istStillgelegt" type="boolean"/>
+      <element minOccurs="0" name="istTouristisch" type="boolean"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_OEVTrasse_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_OEVTrasse_Info"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_BETRIEBSSTOFFType">
+    <restriction base="string">
+      <enumeration value="Autogas"/>
+      <enumeration value="BenzinDiesel"/>
+      <enumeration value="ErdGas"/>
+      <enumeration value="Strom"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Verband_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Verband_InfoType"/>
+  <complexType name="XE_Verband_InfoType">
+    <sequence>
+      <element minOccurs="0" name="adminebene" type="xe:EN_ADMINEBENEType"/>
+      <element minOccurs="0" name="nutsebene" type="xe:EN_NUTSEBENEType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Verband_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Verband_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_SozialEinrichtung" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_SozialEinrichtungType"/>
+  <complexType name="XE_SozialEinrichtungType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_SozialEinrichtungPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_SozialEinrichtung"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_SchuleSpezial" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_SchuleSpezialType"/>
+  <complexType name="XE_SchuleSpezialType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_SchuleSpezialPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_SchuleSpezial"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_NUTSEBENEType">
+    <restriction base="string">
+      <enumeration value="NUTS0"/>
+      <enumeration value="NUTS1"/>
+      <enumeration value="NUTS2"/>
+      <enumeration value="NUTS3"/>
+      <enumeration value="LAU1"/>
+      <enumeration value="LAU2"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_OEVLinie" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_OEVLinieType"/>
+  <complexType name="XE_OEVLinieType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="aufTrasse" type="xe:XE_OEVTrassePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_OEVLiniePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_OEVLinie"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_ENTSORG_SAMMELGUTType">
+    <restriction base="string">
+      <enumeration value="Altkleider"/>
+      <enumeration value="Elektrogeraete"/>
+      <enumeration value="Elektronik"/>
+      <enumeration value="Glas"/>
+      <enumeration value="Gruenabfall"/>
+      <enumeration value="MetallSchrott"/>
+      <enumeration value="Papier"/>
+      <enumeration value="Restmuell"/>
+      <enumeration value="Sondermuell"/>
+      <enumeration value="Sperrmuell"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_SchuleAllgemein_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_SchuleAllgemein_InfoType"/>
+  <complexType name="XE_SchuleAllgemein_InfoType">
+    <sequence>
+      <element minOccurs="0" name="foerderung" type="xe:EN_FOERDERSCHWERPUNKTType"/>
+      <element minOccurs="0" name="paedagogik" type="xe:EN_PAEDAGOGIKType"/>
+      <element minOccurs="0" name="tageszeit" type="xe:EN_TAGESZEITType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_SchuleAllgemein_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_SchuleAllgemein_Info"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_PAEDAGOGIKType">
+    <restriction base="string">
+      <enumeration value="Montessori"/>
+      <enumeration value="Waldorf"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Sammelstelle_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Sammelstelle_InfoType"/>
+  <complexType name="XE_Sammelstelle_InfoType">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="sammelgut" type="xe:EN_ENTSORG_SAMMELGUTType"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Sammelstelle_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Sammelstelle_Info"/>
+    </sequence>
+  </complexType>
+  <element name="XE_Wasserverkehr" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_WasserverkehrType"/>
+  <complexType name="XE_WasserverkehrType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_WasserverkehrPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Wasserverkehr"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <simpleType name="EN_FOERDERSCHWERPUNKTType">
+    <restriction base="string">
+      <enumeration value="FoederschwerpunktSprache"/>
+      <enumeration value="FoerderschwerpunktSozialeEntwicklung"/>
+      <enumeration value="FoerderschwerpunktBlinde"/>
+      <enumeration value="FoederschwerpunktGehoerlose"/>
+      <enumeration value="FoerderschwerpunktLernen"/>
+      <enumeration value="FoerderschwerpunktMotorik"/>
+      <enumeration value="FoerderschwerpunktSonstiges"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Radverkehr" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_RadverkehrType"/>
+  <complexType name="XE_RadverkehrType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_RadverkehrPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Radverkehr"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Radverkehr_Info" substitutionGroup="gml:AbstractObject" type="xe:XE_Radverkehr_InfoType"/>
+  <complexType name="XE_Radverkehr_InfoType">
+    <sequence>
+      <element minOccurs="0" name="istAmBahnhof" type="boolean"/>
+      <element minOccurs="0" name="istBewacht" type="boolean"/>
+    </sequence>
+  </complexType>
+  <complexType name="XE_Radverkehr_InfoPropertyType">
+    <sequence>
+      <element ref="xe:XE_Radverkehr_Info"/>
+    </sequence>
+  </complexType>
+  <simpleType name="EN_GEFAHRENGRUPPEType">
+    <restriction base="string">
+      <enumeration value="Kinder"/>
+      <enumeration value="Senioren"/>
+      <enumeration value="BlindeMenschen"/>
+      <enumeration value="GehbehinderteMenschen"/>
+      <enumeration value="Rollstuhlfahrer"/>
+      <enumeration value="Fußgänger"/>
+      <enumeration value="Radfahrer"/>
+      <enumeration value="Motorradfahrer"/>
+      <enumeration value="Autofahrer"/>
+      <enumeration value="Reiter"/>
+      <enumeration value="Inlinerfahrer"/>
+      <enumeration value="Mountainbiker"/>
+      <enumeration value="Wassersportler"/>
+      <enumeration value="Kanuten"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="EN_TAGESZEITType">
+    <restriction base="string">
+      <enumeration value="Abends"/>
+      <enumeration value="Ganztags"/>
+      <enumeration value="Halbtags"/>
+      <enumeration value="Mehrtaegig"/>
+    </restriction>
+  </simpleType>
+  <element name="XE_Gesundheit" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_GesundheitType"/>
+  <complexType name="XE_GesundheitType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_GesundheitPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Gesundheit"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_OEVHaltestelle" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_OEVHaltestelleType"/>
+  <complexType name="XE_OEVHaltestelleType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_OEVHaltestellePropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_OEVHaltestelle"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="XE_Flughafen" substitutionGroup="xe:XE_OrtVonInteresse" type="xe:XE_FlughafenType"/>
+  <complexType name="XE_FlughafenType">
+    <complexContent>
+      <extension base="xe:XE_OrtVonInteresseType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="XE_FlughafenPropertyType">
+    <sequence minOccurs="0">
+      <element ref="xe:XE_Flughafen"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>
