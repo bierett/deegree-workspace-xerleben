@@ -1,5 +1,5 @@
 <SQLFeatureStore xmlns="http://www.deegree.org/datasource/feature/sql" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xe="http://www.xerleben.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.1.0" xsi:schemaLocation="http://www.deegree.org/datasource/feature/sql http://schemas.deegree.org/datasource/feature/sql/3.1.0/sql.xsd">
-  <JDBCConnId>jdbc_xerleben</JDBCConnId>
+  <JDBCConnId>xerleben_demo</JDBCConnId>
   <StorageCRS srid="-1" dim="2D">EPSG:4326</StorageCRS>
   <GMLSchema>../../appschemas/xe_basic.xsd</GMLSchema>
   <GMLSchema>../../appschemas/xe_freizeit_erholung.xsd</GMLSchema>
