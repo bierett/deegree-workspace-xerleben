@@ -4,7 +4,7 @@
 		<FeatureType xmlns:xe='http://www.xerleben.de'>xe:XE_Mediathek</FeatureType>
 		<l:Name>xe_mediathek</l:Name>
 		<d:Title>XE Mediathek</d:Title>
-		<s:CRS>EPSG:4326 EPSG:25833 EPSG:25832 EPSG:31466 EPSG:31467 EPSG:31468</s:CRS>
+		<s:CRS>EPSG:4326 EPSG:25832 EPSG:25833 EPSG:31466 EPSG:31467 EPSG:31468</s:CRS>
 		<l:StyleRef>
 			<l:StyleStoreId>xe_mediathek</l:StyleStoreId>
 		</l:StyleRef>

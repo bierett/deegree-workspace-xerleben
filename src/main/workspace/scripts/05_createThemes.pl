@@ -5,7 +5,7 @@ use XML::DOM;
 #use warnings;
 
 my $properties = new Config::Simple('00_properties.ini');
-my $epsg = $properties->param('epsg.epsg');
+@epsg = $properties->param('epsg.epsg');
 my $filename = $properties->param('filename.themes');
 
 my $xmlParser = new XML::DOM::Parser;
@@ -33,7 +33,7 @@ sub parseThemes {
 		print output "\t<Theme>\n";
 		print output "\t\t<Identifier>xerleben</Identifier>\n";
 		print output "\t\t<d:Title>Root theme</d:Title>\n";
-		print output "\t\t<s:CRS>".$epsg."</s:CRS>\n";
+		print output "\t\t<s:CRS>@epsg</s:CRS>\n";
 		for (my $i = 0; $i < $n; $i++) {
 			my $node = $nodes->item ($i);
 			#&fileName;

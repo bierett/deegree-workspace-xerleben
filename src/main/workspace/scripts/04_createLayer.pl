@@ -5,7 +5,7 @@ use XML::DOM;
 #use warnings;
 
 my $properties = new Config::Simple('00_properties.ini');
-my $epsg = $properties->param('epsg.epsg');
+@epsg = $properties->param('epsg.epsg');
 my $featurestore = $properties->param('filename.featurestore');
 
 my $xmlParser = new XML::DOM::Parser;
@@ -36,7 +36,7 @@ sub parseLayer {
 				print output "\t\t<FeatureType xmlns:xe='http://www.xerleben.de'>xe:XE_".$title."</FeatureType>\n";
 				print output "\t\t<l:Name>".$name."</l:Name>\n";
 				print output "\t\t<d:Title>XE ".$title."</d:Title>\n";
-				print output "\t\t<s:CRS>".$epsg."</s:CRS>\n";
+				print output "\t\t<s:CRS>@epsg</s:CRS>\n";
 				print output "\t\t<l:StyleRef>\n";
 					print output "\t\t\t<l:StyleStoreId>".$name."</l:StyleStoreId>\n";
 				print output "\t\t</l:StyleRef>\n";

@@ -7,6 +7,10 @@
 	</SupportedVersions>
 	<EnableTransactions>true</EnableTransactions>
 	<DisableResponseBuffering>true</DisableResponseBuffering>
-	<QueryCRS>EPSG:25832</QueryCRS>
 	<QueryCRS>EPSG:4326</QueryCRS>
+	<QueryCRS>EPSG:25832</QueryCRS>
+	<QueryCRS>EPSG:25833</QueryCRS>
+	<QueryCRS>EPSG:31466</QueryCRS>
+	<QueryCRS>EPSG:31467</QueryCRS>
+	<QueryCRS>EPSG:31468</QueryCRS>
 </deegreeWFS>
