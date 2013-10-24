@@ -1,0 +1,396 @@
+<Themes configVersion='3.2.0' xmlns='http://www.deegree.org/themes/standard' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:d='http://www.deegree.org/metadata/description' xmlns:s='http://www.deegree.org/metadata/spatial' xsi:schemaLocation='http://www.deegree.org/themes/standard http://schemas.deegree.org/themes/3.2.0/themes.xsd'>	<LayerStoreId>xe_aussichtspunkt</LayerStoreId>
+	<LayerStoreId>xe_autoverkehr</LayerStoreId>
+	<LayerStoreId>xe_baden</LayerStoreId>
+	<LayerStoreId>xe_bauwerk</LayerStoreId>
+	<LayerStoreId>xe_behoerde</LayerStoreId>
+	<LayerStoreId>xe_denkmal</LayerStoreId>
+	<LayerStoreId>xe_erholung</LayerStoreId>
+	<LayerStoreId>xe_flughafen</LayerStoreId>
+	<LayerStoreId>xe_gastronomie</LayerStoreId>
+	<LayerStoreId>xe_gefahrenstelle</LayerStoreId>
+	<LayerStoreId>xe_gesundheit</LayerStoreId>
+	<LayerStoreId>xe_gewerbegebiet</LayerStoreId>
+	<LayerStoreId>xe_gewerbeimmobilie</LayerStoreId>
+	<LayerStoreId>xe_gotteshaus</LayerStoreId>
+	<LayerStoreId>xe_kino</LayerStoreId>
+	<LayerStoreId>xe_kultureinrichtung</LayerStoreId>
+	<LayerStoreId>xe_landmarke</LayerStoreId>
+	<LayerStoreId>xe_lehrpfad</LayerStoreId>
+	<LayerStoreId>xe_logistik</LayerStoreId>
+	<LayerStoreId>xe_mediathek</LayerStoreId>
+	<LayerStoreId>xe_messe</LayerStoreId>
+	<LayerStoreId>xe_militaer</LayerStoreId>
+	<LayerStoreId>xe_moeblierung</LayerStoreId>
+	<LayerStoreId>xe_museum</LayerStoreId>
+	<LayerStoreId>xe_nachtleben</LayerStoreId>
+	<LayerStoreId>xe_naturlandschaft</LayerStoreId>
+	<LayerStoreId>xe_oevhaltestelle</LayerStoreId>
+	<LayerStoreId>xe_oevlinie</LayerStoreId>
+	<LayerStoreId>xe_oevtrasse</LayerStoreId>
+	<LayerStoreId>xe_ortvoninteresse</LayerStoreId>
+	<LayerStoreId>xe_radverkehr</LayerStoreId>
+	<LayerStoreId>xe_radwanderweg</LayerStoreId>
+	<LayerStoreId>xe_rast</LayerStoreId>
+	<LayerStoreId>xe_reitweg</LayerStoreId>
+	<LayerStoreId>xe_religioeses</LayerStoreId>
+	<LayerStoreId>xe_rettung</LayerStoreId>
+	<LayerStoreId>xe_sammelstelle</LayerStoreId>
+	<LayerStoreId>xe_sammlung</LayerStoreId>
+	<LayerStoreId>xe_schuleallgemein</LayerStoreId>
+	<LayerStoreId>xe_schulespezial</LayerStoreId>
+	<LayerStoreId>xe_servicestelle</LayerStoreId>
+	<LayerStoreId>xe_shopping</LayerStoreId>
+	<LayerStoreId>xe_siedlung</LayerStoreId>
+	<LayerStoreId>xe_sonstigerfreizeitweg</LayerStoreId>
+	<LayerStoreId>xe_sozialeinrichtung</LayerStoreId>
+	<LayerStoreId>xe_sport</LayerStoreId>
+	<LayerStoreId>xe_streckenvariante</LayerStoreId>
+	<LayerStoreId>xe_tankstelle</LayerStoreId>
+	<LayerStoreId>xe_technischesbauwerk</LayerStoreId>
+	<LayerStoreId>xe_theatermusik</LayerStoreId>
+	<LayerStoreId>xe_tiermedizin</LayerStoreId>
+	<LayerStoreId>xe_tierwelt</LayerStoreId>
+	<LayerStoreId>xe_traegerabschnitt</LayerStoreId>
+	<LayerStoreId>xe_unterkunft</LayerStoreId>
+	<LayerStoreId>xe_unternehmen</LayerStoreId>
+	<LayerStoreId>xe_verentsorgungsbetrieb</LayerStoreId>
+	<LayerStoreId>xe_veranstaltung</LayerStoreId>
+	<LayerStoreId>xe_veranstaltungsort</LayerStoreId>
+	<LayerStoreId>xe_verband</LayerStoreId>
+	<LayerStoreId>xe_wanderweg</LayerStoreId>
+	<LayerStoreId>xe_wasserverkehr</LayerStoreId>
+	<LayerStoreId>xe_wegabschnitt</LayerStoreId>
+	<LayerStoreId>xe_wegweisung</LayerStoreId>
+	<LayerStoreId>xe_weiterbildung</LayerStoreId>
+	<LayerStoreId>xe_wissenschaft</LayerStoreId>
+	<Theme>
+		<Identifier>xerleben</Identifier>
+		<d:Title>Root theme</d:Title>
+		<s:CRS>EPSG:4326 EPSG:25833 EPSG:25832 EPSG:31466 EPSG:31467 EPSG:31468</s:CRS>
+		<Theme>
+			<Identifier>xe_aussichtspunkt</Identifier>
+			<d:Title>XE Aussichtspunkt</d:Title>
+			<Layer>xe_aussichtspunkt</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_autoverkehr</Identifier>
+			<d:Title>XE Autoverkehr</d:Title>
+			<Layer>xe_autoverkehr</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_baden</Identifier>
+			<d:Title>XE Baden</d:Title>
+			<Layer>xe_baden</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_bauwerk</Identifier>
+			<d:Title>XE Bauwerk</d:Title>
+			<Layer>xe_bauwerk</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_behoerde</Identifier>
+			<d:Title>XE Behoerde</d:Title>
+			<Layer>xe_behoerde</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_denkmal</Identifier>
+			<d:Title>XE Denkmal</d:Title>
+			<Layer>xe_denkmal</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_erholung</Identifier>
+			<d:Title>XE Erholung</d:Title>
+			<Layer>xe_erholung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_flughafen</Identifier>
+			<d:Title>XE Flughafen</d:Title>
+			<Layer>xe_flughafen</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_gastronomie</Identifier>
+			<d:Title>XE Gastronomie</d:Title>
+			<Layer>xe_gastronomie</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_gefahrenstelle</Identifier>
+			<d:Title>XE Gefahrenstelle</d:Title>
+			<Layer>xe_gefahrenstelle</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_gesundheit</Identifier>
+			<d:Title>XE Gesundheit</d:Title>
+			<Layer>xe_gesundheit</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_gewerbegebiet</Identifier>
+			<d:Title>XE Gewerbegebiet</d:Title>
+			<Layer>xe_gewerbegebiet</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_gewerbeimmobilie</Identifier>
+			<d:Title>XE Gewerbeimmobilie</d:Title>
+			<Layer>xe_gewerbeimmobilie</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_gotteshaus</Identifier>
+			<d:Title>XE Gotteshaus</d:Title>
+			<Layer>xe_gotteshaus</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_kino</Identifier>
+			<d:Title>XE Kino</d:Title>
+			<Layer>xe_kino</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_kultureinrichtung</Identifier>
+			<d:Title>XE Kultureinrichtung</d:Title>
+			<Layer>xe_kultureinrichtung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_landmarke</Identifier>
+			<d:Title>XE Landmarke</d:Title>
+			<Layer>xe_landmarke</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_lehrpfad</Identifier>
+			<d:Title>XE Lehrpfad</d:Title>
+			<Layer>xe_lehrpfad</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_logistik</Identifier>
+			<d:Title>XE Logistik</d:Title>
+			<Layer>xe_logistik</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_mediathek</Identifier>
+			<d:Title>XE Mediathek</d:Title>
+			<Layer>xe_mediathek</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_messe</Identifier>
+			<d:Title>XE Messe</d:Title>
+			<Layer>xe_messe</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_militaer</Identifier>
+			<d:Title>XE Militaer</d:Title>
+			<Layer>xe_militaer</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_moeblierung</Identifier>
+			<d:Title>XE Moeblierung</d:Title>
+			<Layer>xe_moeblierung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_museum</Identifier>
+			<d:Title>XE Museum</d:Title>
+			<Layer>xe_museum</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_nachtleben</Identifier>
+			<d:Title>XE Nachtleben</d:Title>
+			<Layer>xe_nachtleben</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_naturlandschaft</Identifier>
+			<d:Title>XE NaturLandschaft</d:Title>
+			<Layer>xe_naturlandschaft</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_oevhaltestelle</Identifier>
+			<d:Title>XE OEVHaltestelle</d:Title>
+			<Layer>xe_oevhaltestelle</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_oevlinie</Identifier>
+			<d:Title>XE OEVLinie</d:Title>
+			<Layer>xe_oevlinie</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_oevtrasse</Identifier>
+			<d:Title>XE OEVTrasse</d:Title>
+			<Layer>xe_oevtrasse</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_ortvoninteresse</Identifier>
+			<d:Title>XE OrtVonInteresse</d:Title>
+			<Layer>xe_ortvoninteresse</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_radverkehr</Identifier>
+			<d:Title>XE Radverkehr</d:Title>
+			<Layer>xe_radverkehr</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_radwanderweg</Identifier>
+			<d:Title>XE Radwanderweg</d:Title>
+			<Layer>xe_radwanderweg</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_rast</Identifier>
+			<d:Title>XE Rast</d:Title>
+			<Layer>xe_rast</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_reitweg</Identifier>
+			<d:Title>XE Reitweg</d:Title>
+			<Layer>xe_reitweg</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_religioeses</Identifier>
+			<d:Title>XE Religioeses</d:Title>
+			<Layer>xe_religioeses</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_rettung</Identifier>
+			<d:Title>XE Rettung</d:Title>
+			<Layer>xe_rettung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_sammelstelle</Identifier>
+			<d:Title>XE Sammelstelle</d:Title>
+			<Layer>xe_sammelstelle</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_sammlung</Identifier>
+			<d:Title>XE Sammlung</d:Title>
+			<Layer>xe_sammlung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_schuleallgemein</Identifier>
+			<d:Title>XE SchuleAllgemein</d:Title>
+			<Layer>xe_schuleallgemein</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_schulespezial</Identifier>
+			<d:Title>XE SchuleSpezial</d:Title>
+			<Layer>xe_schulespezial</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_servicestelle</Identifier>
+			<d:Title>XE Servicestelle</d:Title>
+			<Layer>xe_servicestelle</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_shopping</Identifier>
+			<d:Title>XE Shopping</d:Title>
+			<Layer>xe_shopping</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_siedlung</Identifier>
+			<d:Title>XE Siedlung</d:Title>
+			<Layer>xe_siedlung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_sonstigerfreizeitweg</Identifier>
+			<d:Title>XE SonstigerFreizeitweg</d:Title>
+			<Layer>xe_sonstigerfreizeitweg</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_sozialeinrichtung</Identifier>
+			<d:Title>XE SozialEinrichtung</d:Title>
+			<Layer>xe_sozialeinrichtung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_sport</Identifier>
+			<d:Title>XE Sport</d:Title>
+			<Layer>xe_sport</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_streckenvariante</Identifier>
+			<d:Title>XE Streckenvariante</d:Title>
+			<Layer>xe_streckenvariante</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_tankstelle</Identifier>
+			<d:Title>XE Tankstelle</d:Title>
+			<Layer>xe_tankstelle</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_technischesbauwerk</Identifier>
+			<d:Title>XE TechnischesBauwerk</d:Title>
+			<Layer>xe_technischesbauwerk</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_theatermusik</Identifier>
+			<d:Title>XE TheaterMusik</d:Title>
+			<Layer>xe_theatermusik</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_tiermedizin</Identifier>
+			<d:Title>XE Tiermedizin</d:Title>
+			<Layer>xe_tiermedizin</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_tierwelt</Identifier>
+			<d:Title>XE Tierwelt</d:Title>
+			<Layer>xe_tierwelt</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_traegerabschnitt</Identifier>
+			<d:Title>XE Traegerabschnitt</d:Title>
+			<Layer>xe_traegerabschnitt</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_unterkunft</Identifier>
+			<d:Title>XE Unterkunft</d:Title>
+			<Layer>xe_unterkunft</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_unternehmen</Identifier>
+			<d:Title>XE Unternehmen</d:Title>
+			<Layer>xe_unternehmen</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_verentsorgungsbetrieb</Identifier>
+			<d:Title>XE VerEntsorgungsbetrieb</d:Title>
+			<Layer>xe_verentsorgungsbetrieb</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_veranstaltung</Identifier>
+			<d:Title>XE Veranstaltung</d:Title>
+			<Layer>xe_veranstaltung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_veranstaltungsort</Identifier>
+			<d:Title>XE Veranstaltungsort</d:Title>
+			<Layer>xe_veranstaltungsort</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_verband</Identifier>
+			<d:Title>XE Verband</d:Title>
+			<Layer>xe_verband</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_wanderweg</Identifier>
+			<d:Title>XE Wanderweg</d:Title>
+			<Layer>xe_wanderweg</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_wasserverkehr</Identifier>
+			<d:Title>XE Wasserverkehr</d:Title>
+			<Layer>xe_wasserverkehr</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_wegabschnitt</Identifier>
+			<d:Title>XE Wegabschnitt</d:Title>
+			<Layer>xe_wegabschnitt</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_wegweisung</Identifier>
+			<d:Title>XE Wegweisung</d:Title>
+			<Layer>xe_wegweisung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_weiterbildung</Identifier>
+			<d:Title>XE Weiterbildung</d:Title>
+			<Layer>xe_weiterbildung</Layer>
+		</Theme>
+		<Theme>
+			<Identifier>xe_wissenschaft</Identifier>
+			<d:Title>XE Wissenschaft</d:Title>
+			<Layer>xe_wissenschaft</Layer>
+		</Theme>
+	</Theme>
+</Themes>
