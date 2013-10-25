@@ -5,7 +5,7 @@ use XML::DOM;
 #use warnings;
 
 my $properties = new Config::Simple('00_properties.ini');
-@epsg = $properties->param('epsg.epsg');
+@epsg = $properties->param('epsg.crs');
 my $filename = $properties->param('filename.themes');
 
 my $xmlParser = new XML::DOM::Parser;

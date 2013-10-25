@@ -6,7 +6,7 @@ use Config::Simple;
 my $properties = new Config::Simple('00_properties.ini');
 
 my $filename = $properties->param('filename.wfs');
-@epsg = $properties->param('epsg.epsg');
+@epsg = $properties->param('epsg.crs');
 
 open output,">../services/".$filename.".xml" or die "Can't open the output file! See";
 
