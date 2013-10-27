@@ -1,0 +1,21 @@
+<FeatureTypeStyle xmlns='http://www.opengis.net/se' xmlns:ogc='http://www.opengis.net/ogc' xmlns:deegreeogc='http://www.deegree.org/ogc' xmlns:sed='http://www.deegree.org/se' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xe='http://www.xerleben.de' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd http://www.deegree.org/se http://schemas.deegree.org/se/1.1.0/Symbolizer-deegree.xsd'>	<Name>XE Radverkehr</Name>
+	<FeatureTypeName>xe:XE_Radverkehr</FeatureTypeName>
+	<Rule>
+		<Name>xe_radverkehr</Name>
+		<Description>
+			<Title>XE Radverkehr</Title>
+		</Description>
+		<PointSymbolizer>
+			<Geometry>
+				<ogc:PropertyName>xe:lageAnfasspunkt</ogc:PropertyName>
+			</Geometry>
+			<Graphic>
+				<ExternalGraphic>
+					<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='http://www2.geoapps.solingen.de/xerleben/signaturen/bilder/bildschirmanzeige40px/XE_Radverkehr.jpg'/>
+					<Format>image/jpg</Format>
+				</ExternalGraphic>
+				<Size>40</Size>
+			</Graphic>
+		</PointSymbolizer>
+	</Rule>
+</FeatureTypeStyle>
