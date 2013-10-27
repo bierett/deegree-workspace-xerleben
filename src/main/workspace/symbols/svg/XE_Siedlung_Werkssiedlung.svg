@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Häuser">
+	<rect fill-rule="evenodd" clip-rule="evenodd" fill="#FF0000" width="100" height="100"/>
+	<rect x="5" y="5" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFF0" width="90" height="90"/>
+	<polygon fill="#FFFFF0" points="19.25,52 35.019,36.25 50,52 50,85.25 19.25,86.25 	"/>
+	<polygon fill="#FFFFF0" points="52.5,29.033 68.27,13.283 83.25,29.033 83.25,62.283 52.5,63.283 	"/>
+	<path fill="#FF0000" d="M89.623,33.734L66.625,9.92L43.626,33.734l3.618,6.429V40.16l2.475-2.563v29.516h33.812V37.598l2.475,2.563
+		L89.623,33.734z M80.219,62.622h-7.635V45.553H60.666v17.069h-7.635V34.738l13.594-14.082l13.594,14.082V62.622z"/>
+	<path fill="#FF0000" d="M56.373,56.702L33.375,32.888L10.376,56.702l3.618,6.429v-0.003l2.475-2.563V90.08h33.812V60.565
+		l2.475,2.563L56.373,56.702z M46.968,85.589h-7.634V68.521H27.417v17.068h-7.635V57.706l13.594-14.082l13.593,14.082V85.589z"/>
+</g>
+</svg>

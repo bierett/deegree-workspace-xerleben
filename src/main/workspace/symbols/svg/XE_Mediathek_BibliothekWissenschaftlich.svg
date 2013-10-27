@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Ebene_1_1_">
+	<g id="Ebene_2">
+		<rect fill="#FF0000" width="100" height="100"/>
+	</g>
+	<rect x="5" y="5" fill="#FFFFF0" width="90" height="90"/>
+	<path fill="#FF0000" d="M25,20c-6.667,3.333-8.333,10-5,20l20,50c-6.667-6.666-6.667-13.334,0-20h50L60,20H25z"/>
+	<path fill="#FF0000" stroke="#FFFFF0" stroke-width="5" d="M40,70c-6.667,6.666-6.667,13.334,0,20h50c-10-6.666-10-13.334,0-20H40z
+		"/>
+	<line fill="none" stroke="#FFFFF0" stroke-width="5" x1="30" y1="32.613" x2="61.104" y2="32.613"/>
+</g>
+<g id="Ebene_3">
+	<rect x="95" y="67.219" fill="#FF0000" width="3.313" height="2.484"/>
+	<rect x="95" y="90.266" fill="#FF0000" width="3.313" height="2.483"/>
+</g>
+</svg>

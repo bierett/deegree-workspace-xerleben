@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<polygon fill="#FF0000" points="0,0 100,0 100,100 0,100 0,0 "/>
+<polygon fill="#FFFFF0" points="5,5 95,5 95,95 5,95 5,5 "/>
+<circle fill="#FF0000" cx="35.58" cy="75.007" r="13.822"/>
+<path fill="#FFFFF0" stroke="#FF0000" stroke-width="3" d="M41.723,67.544c0,4.122-2.751,7.463-6.143,7.463l0,0
+	c-3.393,0-6.143-3.341-6.143-7.463V18.637c0-4.123,2.75-7.466,6.143-7.466l0,0c3.392,0,6.143,3.343,6.143,7.466V67.544z"/>
+<circle fill="#FF0000" cx="35.581" cy="75.006" r="11"/>
+<rect x="29.437" y="31.9" fill="#FF0000" width="12.286" height="35.644"/>
+<g>
+	<path fill="#FF0000" d="M82.83,77.941c-2.092,0.494-4.344,0.906-6.517,0.906c-9.263,0-15.696-4.647-15.696-14.349
+		c0-9.827,5.982-15.335,15.696-15.335c1.885,0,4.385,0.37,6.473,1.191l-0.406,4.852c-2.173-1.234-4.141-1.521-6.189-1.521
+		c-5.9,0-9.591,4.521-9.591,10.402c0,5.838,3.607,10.237,9.714,10.237c2.252,0,4.918-0.494,6.27-1.192L82.83,77.941z"/>
+</g>
+<ellipse fill="none" stroke="#FF0000" stroke-width="2" cx="54.5" cy="50.802" rx="5.098" ry="4.603"/>
+</svg>

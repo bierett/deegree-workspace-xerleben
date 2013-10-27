@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<rect fill-rule="evenodd" clip-rule="evenodd" fill="#FF0000" width="100" height="100"/>
+<polygon fill="#FFFFF0" points="5,5 95,5 95,95 5,95 5,5 "/>
+<polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="9" stroke-miterlimit="10" points="
+	8.437,34.063 49.687,10.626 91.561,33.751 "/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF0000" stroke="#FF0000" stroke-width="0.9375" stroke-miterlimit="10" d="
+	M27.811,90.313c11.252,0,20.313-9.063,20.313-20.314C48.124,59.063,39.063,50,27.811,50C16.562,50,7.5,59.063,7.5,69.999
+	C7.5,81.251,16.562,90.313,27.811,90.313z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFF0" d="M27.811,84.374c7.814,0,14.063-6.561,14.063-14.375
+	c0-7.812-6.249-14.061-14.063-14.061c-7.812,0-14.375,6.249-14.375,14.061C13.436,77.813,19.999,84.374,27.811,84.374z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF0000" stroke="#FF0000" stroke-width="0.9375" stroke-miterlimit="10" d="
+	M71.562,90.313c11.251,0,20.313-9.063,20.313-20.314C91.874,59.063,82.813,50,71.562,50c-10.938,0-20,9.063-20,19.999
+	C51.562,81.251,60.624,90.313,71.562,90.313z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFF0" d="M71.562,84.374c8.125,0,14.375-6.561,14.375-14.375
+	c0-7.812-6.25-14.061-14.375-14.061c-7.812,0-14.062,6.249-14.062,14.061C57.5,77.813,63.75,84.374,71.562,84.374z"/>
+<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="6.25" stroke-miterlimit="10" x1="30.312" y1="37.5" x2="66.562" y2="40.313"/>
+<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="6.25" stroke-miterlimit="10" x1="28.125" y1="69.999" x2="44.998" y2="39.063"/>
+<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="6.25" stroke-miterlimit="10" x1="74.062" y1="70.624" x2="44.687" y2="70.624"/>
+</svg>

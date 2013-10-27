@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="Ebene_2">
+	<rect fill="#FF0000" width="100" height="100"/>
+</g>
+<rect x="5" y="5" fill="#FFFFF0" width="90" height="90"/>
+<polygon fill="#FFFFF0" points="5,5 95,5 95,95 5,95 "/>
+<path fill="#FF0000" d="M5,88.433v7.387h90.795V51.5L5,88.433z"/>
+<line fill="none" stroke="#FF0000" stroke-width="8" stroke-linecap="round" x1="25.677" y1="70.465" x2="64.887" y2="55.414"/>
+<path fill="#FF0000" d="M18.368,64.006l46.679-17.918l-4.658-12.137l-14.004,5.375l-5.376-14.004l-18.671,7.167l5.375,14.004
+	l-14.004,5.376L18.368,64.006z"/>
+<line fill="none" stroke="#FF0000" stroke-width="4" x1="48.176" y1="43.994" x2="71.582" y2="43.578"/>
+<path fill="#FF0000" d="M74.392,28.575l-3.96,17.587l17.586,3.961C82.518,45.094,77.975,37.911,74.392,28.575"/>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g>
+	<rect fill-rule="evenodd" clip-rule="evenodd" fill="#FF0000" width="100" height="100"/>
+	<polygon fill="#FFFFF0" points="5,5 95,5 95,95 5,95 5,5 	"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="3.5716" stroke-miterlimit="3.8637" x1="15.657" y1="25.917" x2="44.792" y2="81.827"/>
+	
+		<line fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="3.5716" stroke-miterlimit="3.8637" x1="64.085" y1="41.47" x2="88.542" y2="81.827"/>
+	<circle fill="#FF0000" cx="40.741" cy="16.26" r="6.696"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FF0000" d="M38.099,30.248c3.347-5.906,10.631-5.906,12.6-3.938
+		c1.52,1.52,8.973,19.942,7.862,20.644c-2.147,1.351-9.056,3.74-13.978-0.591C42.953,44.932,37.905,30.591,38.099,30.248z"/>
+	
+		<polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="7.5892" stroke-linecap="round" stroke-miterlimit="3.8637" points="
+		56.789,53.949 48.336,55.13 37.071,66.472 31.116,85.765 	"/>
+	
+		<polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="7.5892" stroke-linecap="round" stroke-miterlimit="3.8637" points="
+		56.789,54.736 62.932,67.154 76.5,85.506 	"/>
+	
+		<polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="5.6832" stroke-linecap="round" stroke-miterlimit="3.8637" points="
+		41.643,30.719 31.012,31.929 14.476,24.342 	"/>
+	
+		<polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#FF0000" stroke-width="5.6832" stroke-linecap="round" stroke-miterlimit="3.8637" points="
+		68.81,44.816 63.691,38.517 49.517,28.673 	"/>
+</g>
+</svg>
