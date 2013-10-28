@@ -18,6 +18,30 @@
 	      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
 	      <xe:objektUUID>d35abf36-8132-42ae-8a74-f0b511237ecc</xe:objektUUID>
 	      <xe:objektName>Köln-Bonn Flughafen (CGN)</xe:objektName>
+	      <xe:objektAdresse>
+		<xe:XE_Adresse>
+		  <xe:strasse>Kennedystraße</xe:strasse>
+		  <xe:ortsteil>Wahn</xe:ortsteil>
+		  <xe:plz>51147</xe:plz>
+		  <xe:ort>Köln</xe:ort>
+		  <xe:land>Deutschland</xe:land>
+		</xe:XE_Adresse>
+	      </xe:objektAdresse>
+	      <xe:objektEmail>information@koeln-bonn-airport.de </xe:objektEmail>
+	      <xe:objektTelefon>
+		<xe:XE_Telefon>
+		  <xe:vorwahlInternational>49</xe:vorwahlInternational>
+		  <xe:vorwahl>2203</xe:vorwahl>
+		  <xe:ortsanschluss>404001</xe:ortsanschluss>
+		</xe:XE_Telefon>
+	      </xe:objektTelefon>
+	      <xe:objektFax>
+		<xe:XE_Telefon>
+		  <xe:vorwahlInternational>49</xe:vorwahlInternational>
+		  <xe:vorwahl>2203</xe:vorwahl>
+		  <xe:ortsanschluss>404044</xe:ortsanschluss>
+		</xe:XE_Telefon>
+	      </xe:objektFax>
 	      <xe:infoBeschreibung>Der Flughafen Köln/Bonn ,,Konrad Adenauer" (ICAO: EDDK, IATA: CGN) ist ein internationaler Verkehrsflughafen.</xe:infoBeschreibung>
 	      <xe:infoExterneInfo>http://www.koeln-bonn-airport.de</xe:infoExterneInfo>
 	    </xe:XE_Flughafen>
