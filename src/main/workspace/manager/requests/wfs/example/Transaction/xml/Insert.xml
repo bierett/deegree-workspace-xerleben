@@ -42,7 +42,7 @@
               <xe:ortsanschluss>404044</xe:ortsanschluss>
             </xe:XE_Telefon>
           </xe:objektFax>
-          <xe:infoBeschreibung>Der Flughafen Köln/Bonn ,,Konrad Adenauer“ (ICAO: EDDK, IATA: CGN) ist ein internationaler Verkehrsflughafen.</xe:infoBeschreibung>
+          <xe:infoBeschreibung>Der Flughafen Köln/Bonn „Konrad Adenauer“ (ICAO: EDDK, IATA: CGN) ist ein internationaler Verkehrsflughafen.</xe:infoBeschreibung>
           <xe:infoExterneInfo>http://www.koeln-bonn-airport.de</xe:infoExterneInfo>
         </xe:XE_Flughafen>
       </gml:featureMember>
