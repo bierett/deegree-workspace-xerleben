@@ -1,0 +1,27 @@
+## .gitignore (Java) ##
+
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+## .gitignore (Perl) ##
+
+blib/
+.build/
+_build/
+cover_db/
+inc/
+Build
+!Build/
+Build.bat
+.last_cover_stats
+Makefile
+Makefile.old
+MANIFEST.bak
+META.yml
+MYMETA.yml
+nytprof.out
+pm_to_blib
