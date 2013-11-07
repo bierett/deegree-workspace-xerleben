@@ -31,7 +31,7 @@ sub parseThemes {
 		print output "\t<LayerStoreId>" . $name . "</LayerStoreId>\n";
 	}
 		print output "\t<Theme>\n";
-		print output "\t\t<Identifier>xerleben</Identifier>\n";
+		print output "\t\t<Identifier>root</Identifier>\n";
 		print output "\t\t<d:Title>Root theme</d:Title>\n";
 		print output "\t\t<s:CRS>@epsg</s:CRS>\n";
 		for (my $i = 0; $i < $n; $i++) {

@@ -64,7 +64,7 @@
 	<LayerStoreId>xe_weiterbildung</LayerStoreId>
 	<LayerStoreId>xe_wissenschaft</LayerStoreId>
 	<Theme>
-		<Identifier>xerleben</Identifier>
+		<Identifier>root</Identifier>
 		<d:Title>Root theme</d:Title>
 		<s:CRS>EPSG:4326 EPSG:25832 EPSG:25833 EPSG:31466 EPSG:31467 EPSG:31468</s:CRS>
 		<Theme>
