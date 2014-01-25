@@ -7,9 +7,10 @@ use XML::DOM;
 my $properties = new Config::Simple('00_properties.ini');
 @epsg = $properties->param('epsg.crs');
 my $filename = $properties->param('filename.themes');
+my $featurestore = $properties->param('filename.featurestore');
 
 my $xmlParser = new XML::DOM::Parser;
-my $inputFile = '../datasources/feature/xerleben_demo.xml';
+my $inputFile = '../datasources/feature/'.$featurestore.'.xml';
 my $file = $xmlParser->parsefile ($inputFile);
 
 &parseThemes($file);
