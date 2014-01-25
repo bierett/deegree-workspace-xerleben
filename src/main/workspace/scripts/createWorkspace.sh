@@ -59,22 +59,22 @@ echo "";
     fi
 
 #Styles
-    echo "[$(date  +"%d/%m/%Y %T")] ""Starte Styles Konfiguration.";
-    dir="../styles/"
-    echo "[$(date  +"%d/%m/%Y %T")] ""Lösche Verzeichnis '$dir'.";
-    rm -rf $dir/*
-    if [ "$(ls -A $dir)" ]; then
-         echo "[$(date  +"%d/%m/%Y %T")] ""Löschen ist fehlgeschlagen."
-    else
-        echo "[$(date  +"%d/%m/%Y %T")] ""Löschen war erfolgreich."
-    fi
+#    echo "[$(date  +"%d/%m/%Y %T")] ""Starte Styles Konfiguration.";
+#    dir="../styles/"
+#    echo "[$(date  +"%d/%m/%Y %T")] ""Lösche Verzeichnis '$dir'.";
+#    rm -rf $dir/*
+#    if [ "$(ls -A $dir)" ]; then
+#         echo "[$(date  +"%d/%m/%Y %T")] ""Löschen ist fehlgeschlagen."
+#    else
+#        echo "[$(date  +"%d/%m/%Y %T")] ""Löschen war erfolgreich."
+#    fi
 
-    perl bin/06_createStyles.pl
-    if [ "$(ls -A $dir)" ]; then
-         echo "[$(date  +"%d/%m/%Y %T")] ""Styles Konfiguration war erfolgreich.\n"
-    else
-        echo "[$(date  +"%d/%m/%Y %T")] ""Styles Konfiguration ist fehlgeschlagen.\n"
-    fi
+#    perl bin/06_createStyles.pl
+#    if [ "$(ls -A $dir)" ]; then
+#         echo "[$(date  +"%d/%m/%Y %T")] ""Styles Konfiguration war erfolgreich.\n"
+#    else
+#        echo "[$(date  +"%d/%m/%Y %T")] ""Styles Konfiguration ist fehlgeschlagen.\n"
+#    fi
 
 #Themes
     echo "[$(date  +"%d/%m/%Y %T")] ""Starte Themes Konfiguration.";
