@@ -3,7 +3,8 @@ use Config::Simple;
 #use strict;
 #use warnings;
 
-my $properties = new Config::Simple('00_properties.ini');
+my $properties = new Config::Simple('config/01_properties.ini');
+
 my $url = $properties->param('jdbc.url');
 my $user = $properties->param('jdbc.user');
 my $password = $properties->param('jdbc.password');

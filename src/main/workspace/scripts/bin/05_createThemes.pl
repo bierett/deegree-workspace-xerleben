@@ -4,7 +4,8 @@ use XML::DOM;
 #use strict;
 #use warnings;
 
-my $properties = new Config::Simple('00_properties.ini');
+my $properties = new Config::Simple('config/01_properties.ini');
+
 @epsg = $properties->param('epsg.crs');
 my $filename = $properties->param('filename.themes');
 my $featurestore = $properties->param('filename.featurestore');

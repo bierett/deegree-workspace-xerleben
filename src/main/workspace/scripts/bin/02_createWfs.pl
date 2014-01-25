@@ -3,7 +3,7 @@ use Config::Simple;
 #use strict;
 #use warnings;
 
-my $properties = new Config::Simple('00_properties.ini');
+my $properties = new Config::Simple('config/01_properties.ini');
 
 my $filename = $properties->param('filename.wfs');
 @epsg = $properties->param('epsg.crs');
