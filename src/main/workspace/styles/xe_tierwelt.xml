@@ -1,7 +1,7 @@
 <FeatureTypeStyle xmlns='http://www.opengis.net/se' xmlns:ogc='http://www.opengis.net/ogc' xmlns:deegreeogc='http://www.deegree.org/ogc' xmlns:sed='http://www.deegree.org/se' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xe='http://www.xerleben.de' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd http://www.deegree.org/se http://schemas.deegree.org/se/1.1.0/Symbolizer-deegree.xsd'>	<Name>XE Tierwelt</Name>
 	<FeatureTypeName>xe:XE_Tierwelt</FeatureTypeName>
 	<Rule>
-		<Name>xe_tierwelt</Name>
+		<Name>xe_tierwelt_point</Name>
 		<Description>
 			<Title>XE Tierwelt</Title>
 		</Description>
@@ -11,10 +11,10 @@
 			</Geometry>
 			<Graphic>
 				<ExternalGraphic>
-					<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='http://www2.geoapps.solingen.de/xerleben/signaturen/bilder/bildschirmanzeige40px/XE_Tierwelt.jpg'/>
-					<Format>image/jpg</Format>
+					<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/png/XE_Tierwelt.png'/>
+					<Format>image/png</Format>
 				</ExternalGraphic>
-				<Size>40</Size>
+				<Size>80</Size>
 			</Graphic>
 		</PointSymbolizer>
 	</Rule>

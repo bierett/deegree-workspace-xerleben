@@ -38,7 +38,7 @@ sub parseStyles {
 		print output "\t<Name>XE ".$title."</Name>\n";
 		print output "\t<FeatureTypeName>xe:XE_".$title."</FeatureTypeName>\n";
 			print output "\t<Rule>\n";
-				print output "\t\t<Name>".$name."</Name>\n";
+				print output "\t\t<Name>".$name."_point</Name>\n";
 				print output "\t\t<Description>\n";
 					print output "\t\t\t<Title>XE ".$title."</Title>\n";
 				print output "\t\t</Description>\n";
@@ -48,10 +48,10 @@ sub parseStyles {
 					print output "\t\t\t</Geometry>\n";
 					print output "\t\t\t<Graphic>\n";
 						print output "\t\t\t\t<ExternalGraphic>\n";
-							print output "\t\t\t\t\t<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='http://www2.geoapps.solingen.de/xerleben/signaturen/bilder/bildschirmanzeige40px/XE_"."$title".".jpg'/>\n";
-							print output "\t\t\t\t\t<Format>image/jpg</Format>\n";
+							print output "\t\t\t\t\t<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/png/XE_"."$title".".png'/>\n";
+							print output "\t\t\t\t\t<Format>image/png</Format>\n";
 						print output "\t\t\t\t</ExternalGraphic>\n";
-						print output "\t\t\t\t<Size>40</Size>\n";
+						print output "\t\t\t\t<Size>80</Size>\n";
 					print output "\t\t\t</Graphic>\n";
 				print output "\t\t</PointSymbolizer>\n";
 			print output "\t</Rule>\n";
