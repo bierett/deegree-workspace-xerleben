@@ -50,10 +50,10 @@ sub parseStyles {
 					print output "\t\t\t</Geometry>\n";
 					print output "\t\t\t<Graphic>\n";
 
-print output "<Displacement>\n";
-print output "<DisplacementX>-25</DisplacementX>\n";
-print output "<DisplacementY>35</DisplacementY>\n";
-print output "</Displacement>\n";
+                                            print output "\t\t\t\t<Displacement>\n";
+                                            print output "\t\t\t\t\t<DisplacementX>-5</DisplacementX>\n";
+                                            print output "\t\t\t\t\t<DisplacementY>35</DisplacementY>\n";
+                                            print output "\t\t\t\t</Displacement>\n";
 
 						print output "\t\t\t\t<ExternalGraphic>\n";
 							print output "\t\t\t\t\t<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/png/XE_"."$title".".png'/>\n";

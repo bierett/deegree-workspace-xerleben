@@ -10,10 +10,10 @@
 				<ogc:PropertyName>xe:lageAnfasspunkt</ogc:PropertyName>
 			</Geometry>
 			<Graphic>
-<Displacement>
-<DisplacementX>-25</DisplacementX>
-<DisplacementY>35</DisplacementY>
-</Displacement>
+				<Displacement>
+					<DisplacementX>-5</DisplacementX>
+					<DisplacementY>35</DisplacementY>
+				</Displacement>
 				<ExternalGraphic>
 					<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/png/XE_NaturLandschaft.png'/>
 					<Format>image/png</Format>
