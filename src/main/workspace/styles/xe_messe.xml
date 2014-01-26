@@ -10,6 +10,10 @@
 				<ogc:PropertyName>xe:lageAnfasspunkt</ogc:PropertyName>
 			</Geometry>
 			<Graphic>
+<Displacement>
+<DisplacementX>-25</DisplacementX>
+<DisplacementY>35</DisplacementY>
+</Displacement>
 				<ExternalGraphic>
 					<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/png/XE_Messe.png'/>
 					<Format>image/png</Format>
@@ -17,6 +21,28 @@
 				<Size>80</Size>
 			</Graphic>
 		</PointSymbolizer>
+		<TextSymbolizer uom='pixel'>
+			<Label>
+				<ogc:PropertyName>xe:objektName</ogc:PropertyName>
+			</Label>
+			<Font>
+				<SvgParameter name='font-family'>Arial</SvgParameter>
+				<SvgParameter name='font-family'>Sans-Serif</SvgParameter>
+				<SvgParameter name='font-weight'>bold</SvgParameter>
+				<SvgParameter name='font-size'>13</SvgParameter>
+			</Font>
+			<LabelPlacement>
+				<PointPlacement>
+					<Displacement>
+						<DisplacementX>0</DisplacementX>
+						<DisplacementY>0</DisplacementY>
+					</Displacement>
+				</PointPlacement>
+			</LabelPlacement>
+			<Halo>
+				<Radius>1.2</Radius>
+			</Halo>
+		</TextSymbolizer>
 	</Rule>
 	<Rule>
 		<Name>xe_messe_line</Name>

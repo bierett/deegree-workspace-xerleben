@@ -40,7 +40,7 @@ sub parseStyles {
 
                         #Point
 			print output "\t<Rule>\n";
-				print output "\t\t<Name>".$name."_point</Name>\n";
+                                print output "\t\t<Name>".$name."_point</Name>\n";
 				print output "\t\t<Description>\n";
 					print output "\t\t\t<Title>XE ".$title." (Point)</Title>\n";
 				print output "\t\t</Description>\n";
@@ -49,6 +49,12 @@ sub parseStyles {
 						print output "\t\t\t\t<ogc:PropertyName>xe:lageAnfasspunkt</ogc:PropertyName>\n";
 					print output "\t\t\t</Geometry>\n";
 					print output "\t\t\t<Graphic>\n";
+
+print output "<Displacement>\n";
+print output "<DisplacementX>-25</DisplacementX>\n";
+print output "<DisplacementY>35</DisplacementY>\n";
+print output "</Displacement>\n";
+
 						print output "\t\t\t\t<ExternalGraphic>\n";
 							print output "\t\t\t\t\t<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/png/XE_"."$title".".png'/>\n";
 							print output "\t\t\t\t\t<Format>image/png</Format>\n";
@@ -56,6 +62,30 @@ sub parseStyles {
 						print output "\t\t\t\t<Size>80</Size>\n";
 					print output "\t\t\t</Graphic>\n";
 				print output "\t\t</PointSymbolizer>\n";
+
+                                print output "\t\t<TextSymbolizer uom='pixel'>\n";
+                                print output "\t\t\t<Label>\n";
+                                print output "\t\t\t\t<ogc:PropertyName>xe:objektName</ogc:PropertyName>\n";
+                                print output "\t\t\t</Label>\n";
+                                print output "\t\t\t<Font>\n";
+                                print output "\t\t\t\t<SvgParameter name='font-family'>Arial</SvgParameter>\n";
+                                print output "\t\t\t\t<SvgParameter name='font-family'>Sans-Serif</SvgParameter>\n";
+                                print output "\t\t\t\t<SvgParameter name='font-weight'>bold</SvgParameter>\n";
+                                print output "\t\t\t\t<SvgParameter name='font-size'>13</SvgParameter>\n";
+                                print output "\t\t\t</Font>\n";
+                                print output "\t\t\t<LabelPlacement>\n";
+                                print output "\t\t\t\t<PointPlacement>\n";
+                                print output "\t\t\t\t\t<Displacement>\n";
+                                print output "\t\t\t\t\t\t<DisplacementX>0</DisplacementX>\n";
+                                print output "\t\t\t\t\t\t<DisplacementY>0</DisplacementY>\n";
+                                print output "\t\t\t\t\t</Displacement>\n";
+                                print output "\t\t\t\t</PointPlacement>\n";
+                                print output "\t\t\t</LabelPlacement>\n";
+                                print output "\t\t\t<Halo>\n";
+                                print output "\t\t\t\t<Radius>1.2</Radius>\n";
+                                print output "\t\t\t</Halo>\n";
+                                print output "\t\t</TextSymbolizer>\n";
+
 			print output "\t</Rule>\n";
 
                         #Line
