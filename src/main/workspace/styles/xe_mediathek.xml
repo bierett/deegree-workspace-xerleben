@@ -3,7 +3,7 @@
 	<Rule>
 		<Name>xe_mediathek_point</Name>
 		<Description>
-			<Title>XE Mediathek</Title>
+			<Title>XE Mediathek (Point)</Title>
 		</Description>
 		<PointSymbolizer>
 			<Geometry>
@@ -17,5 +17,47 @@
 				<Size>80</Size>
 			</Graphic>
 		</PointSymbolizer>
+	</Rule>
+	<Rule>
+		<Name>xe_mediathek_line</Name>
+		<Description>
+			<Title>XE Mediathek (Line)</Title>
+		</Description>
+		<LineSymbolizer uom='meter'>
+			<Geometry>
+				<ogc:PropertyName>xe:lageVerlauf</ogc:PropertyName>
+			</Geometry>
+			<Stroke>
+				<SvgParameter name='stroke'>#000000</SvgParameter>
+				<SvgParameter name='stroke-opacity'>0.5</SvgParameter>
+				<SvgParameter name='stroke-width'>1</SvgParameter>
+				<SvgParameter name='stroke-linecap'>round</SvgParameter>
+				<SvgParameter name='stroke-linejoin'>round</SvgParameter>
+				<SvgParameter name='stroke-dasharray'>1 1</SvgParameter>
+			</Stroke>
+		</LineSymbolizer>
+	</Rule>
+	<Rule>
+		<Name>xe_mediathek_polygon</Name>
+		<Description>
+			<Title>XE Mediathek (Polygon)</Title>
+		</Description>
+		<PolygonSymbolizer uom='meter'>
+			<Geometry>
+				<ogc:PropertyName>xe:lageFlaeche</ogc:PropertyName>
+			</Geometry>
+			<Fill>
+				<SvgParameter name='fill'>#000000</SvgParameter>
+				<SvgParameter name='fill-opacity'>0.5</SvgParameter>
+			</Fill>
+			<Stroke>
+				<SvgParameter name='stroke'>#000000</SvgParameter>
+				<SvgParameter name='stroke-opacity'>0.5</SvgParameter>
+				<SvgParameter name='stroke-width'>1</SvgParameter>
+				<SvgParameter name='stroke-linecap'>round</SvgParameter>
+				<SvgParameter name='stroke-linejoin'>round</SvgParameter>
+				<SvgParameter name='stroke-dasharray'>1 1</SvgParameter>
+			</Stroke>
+		</PolygonSymbolizer>
 	</Rule>
 </FeatureTypeStyle>
