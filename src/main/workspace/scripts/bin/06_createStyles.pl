@@ -56,10 +56,10 @@ sub parseStyles {
                                             print output "\t\t\t\t</Displacement>\n";
 
 						print output "\t\t\t\t<ExternalGraphic>\n";
-							print output "\t\t\t\t\t<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/png/XE_"."$title".".png'/>\n";
+							print output "\t\t\t\t\t<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/svg/XE_"."$title".".svg'/>\n";
 							print output "\t\t\t\t\t<Format>image/png</Format>\n";
 						print output "\t\t\t\t</ExternalGraphic>\n";
-						print output "\t\t\t\t<Size>80</Size>\n";
+						print output "\t\t\t\t<Size>30</Size>\n";
 					print output "\t\t\t</Graphic>\n";
 				print output "\t\t</PointSymbolizer>\n";
 

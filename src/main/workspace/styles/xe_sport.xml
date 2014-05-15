@@ -15,10 +15,10 @@
 					<DisplacementY>35</DisplacementY>
 				</Displacement>
 				<ExternalGraphic>
-					<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/png/XE_Sport.png'/>
+					<OnlineResource xmlns:xlink='http://www.w3.org/1999/xlink' xlink:type='simple' xlink:href='../symbols/svg/XE_Sport.svg'/>
 					<Format>image/png</Format>
 				</ExternalGraphic>
-				<Size>80</Size>
+				<Size>30</Size>
 			</Graphic>
 		</PointSymbolizer>
 		<TextSymbolizer uom='pixel'>
