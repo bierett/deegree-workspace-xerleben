@@ -13,6 +13,15 @@ open output,">../services/".$filename.".xml" or die "Can't open the output file!
 print output "<?xml version='1.0' encoding='UTF-8'?>\n";
 print output "<wms:deegreeWMS configVersion='3.2.0' xmlns:wms='http://www.deegree.org/services/wms' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:dgws='http://www.deegree.org/webservices' xsi:schemaLocation='http://www.deegree.org/services/wms http://schemas.deegree.org/services/wms/3.2.0/wms_configuration.xsd'>\n";
 	print output "\t<wms:ServiceConfiguration>\n";
+		print output "\t\t<wms:DefaultLayerOptions>\n";
+			print output "\t\t\t<wms:FeatureInfoRadius>100</wms:FeatureInfoRadius>\n";
+		print output "\t\t</wms:DefaultLayerOptions>\n";
 		print output "\t\t<wms:ThemeId>".$themes."</wms:ThemeId>\n";
 	print output "\t</wms:ServiceConfiguration>\n";
+	print output "\t<wms:FeatureInfoFormats>\n";
+		print output "\t\t<wms:GetFeatureInfoFormat>\n";
+			print output "\t\t\t<wms:File>html.gfi</wms:File>\n";
+			print output "\t\t\t<wms:Format>text/html</wms:Format>\n";
+		print output "\t\t</wms:GetFeatureInfoFormat>\n";
+	print output "\t</wms:FeatureInfoFormats>\n";
 print output "</wms:deegreeWMS>";

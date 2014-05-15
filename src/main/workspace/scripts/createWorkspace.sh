@@ -52,6 +52,7 @@ echo "";
     perl bin/02_createWfs.pl
     perl bin/07_createWms.pl
     perl bin/08_createMetada.pl
+    perl bin/09_createHtmlGfi.pl
     if [ "$(ls -A $dir)" ]; then
          echo "[$(date  +"%d/%m/%Y %T")] ""Services Konfiguration war erfolgreich.\n"
     else
