@@ -1,69 +1,370 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<wfs:Transaction xmlns:wfs="http://www.opengis.net/wfs" xmlns:app="http://www.deegree.org/app" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dgjdbc="http://www.deegree.org/jdbc" xmlns:gml="http://www.opengis.net/gml" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:deegreewfs="http://www.deegree.org/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" service="WFS" xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
-  <wfs:Insert handle="insert" idgen="GenerateNew">
-    <gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ns1="http://www.w3.org/1999/xhtml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:xe="http://www.xerleben.de" xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty" gml:id="_b9fc67a2-af71-409f-9019-9c0076bc7632" xsi:schemaLocation="http://www.xerleben.de file:/home/bretschneider/Projekte/rvrxerleben2/20_entwicklung/22_realisierung/workspaces/deegree-workspace-xerleben/appschemas/xe.xsd">
-      <gml:featureMember>
-        <xe:XE_Flughafen gml:id="95013edd-3d75-41c7-8992-2a08a99634d8">
-          <xe:lageAnfasspunkt>
-            <gml:Point gml:id="a662d991-e7ee-4b0c-b6e0-3fcd36a4f633" srsName="EPSG:4326">
-              <gml:pos>7.1238008 50.8790625</gml:pos>
-            </gml:Point>
-          </xe:lageAnfasspunkt>
-          <xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
-          <xe:metaLebenszeitStart>2008-07-11T14:39:00+01:00</xe:metaLebenszeitStart>
-          <xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
-          <xe:metaZuletztBearbeitetAm>2013-02-25T11:37:00+01:00</xe:metaZuletztBearbeitetAm>
-          <xe:objektCode>408</xe:objektCode>
-          <xe:objektFunktion>InternationalerFlughafen</xe:objektFunktion>
-          <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
-          <xe:objektUUID>d35abf36-8132-42ae-8a74-f0b511237ecc</xe:objektUUID>
-          <xe:objektName>Köln-Bonn Flughafen (CGN)</xe:objektName>
-          <xe:objektAdresse>
-            <xe:XE_Adresse>
-              <xe:strasse>Kennedystraße</xe:strasse>
-              <xe:ortsteil>Wahn</xe:ortsteil>
-              <xe:plz>51147</xe:plz>
-              <xe:ort>Köln</xe:ort>
-              <xe:land>Deutschland</xe:land>
-            </xe:XE_Adresse>
-          </xe:objektAdresse>
-          <xe:objektEmail>information@koeln-bonn-airport.de </xe:objektEmail>
-          <xe:objektTelefon>
-            <xe:XE_Telefon>
-              <xe:vorwahlInternational>49</xe:vorwahlInternational>
-              <xe:vorwahl>2203</xe:vorwahl>
-              <xe:ortsanschluss>404001</xe:ortsanschluss>
-            </xe:XE_Telefon>
-          </xe:objektTelefon>
-          <xe:objektFax>
-            <xe:XE_Telefon>
-              <xe:vorwahlInternational>49</xe:vorwahlInternational>
-              <xe:vorwahl>2203</xe:vorwahl>
-              <xe:ortsanschluss>404044</xe:ortsanschluss>
-            </xe:XE_Telefon>
-          </xe:objektFax>
-          <xe:infoBeschreibung>Der Flughafen Köln/Bonn „Konrad Adenauer“ (ICAO: EDDK, IATA: CGN) ist ein internationaler Verkehrsflughafen.</xe:infoBeschreibung>
-          <xe:infoExterneInfo>http://www.koeln-bonn-airport.de</xe:infoExterneInfo>
-        </xe:XE_Flughafen>
-      </gml:featureMember>
-      <gml:featureMember>
-        <xe:XE_Gastronomie gml:id="21b63fc3-00e9-4f43-acf1-28f359329451">
-          <xe:lageAnfasspunkt>
-            <gml:Point gml:id="1baed7d0-fcff-4cc5-8a9e-5e739b9f60f0" srsName="EPSG:4326">
-              <gml:pos>7.123403 50.878462</gml:pos>
-            </gml:Point>
-          </xe:lageAnfasspunkt>
-          <xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
-          <xe:metaLebenszeitStart>2009-12-15T06:21:00+01:00</xe:metaLebenszeitStart>
-          <xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
-          <xe:metaZuletztBearbeitetAm>2009-12-15T06:21:00+01:00</xe:metaZuletztBearbeitetAm>
-          <xe:objektCode>763</xe:objektCode>
-          <xe:objektFunktion>ImbissFastfood</xe:objektFunktion>
-          <xe:objektKategorie>XE_Gastronomie</xe:objektKategorie>
-          <xe:objektUUID> b91540fa-00e9-47df-b040-33449d1b6375</xe:objektUUID>
-          <xe:objektName>Subway</xe:objektName>
-        </xe:XE_Gastronomie>
-      </gml:featureMember>
-    </gml:FeatureCollection>
-  </wfs:Insert>
+<wfs:Transaction xmlns:wfs="http://www.opengis.net/wfs"
+	xmlns:app="http://www.deegree.org/app" xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dgjdbc="http://www.deegree.org/jdbc"
+	xmlns:gml="http://www.opengis.net/gml" xmlns:sch="http://www.ascc.net/xml/schematron"
+	xmlns:deegreewfs="http://www.deegree.org/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="1.1.0" service="WFS"
+	xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/1.1.0/wfs.xsd">
+	<wfs:Insert handle="insert" idgen="GenerateNew">
+		<gml:FeatureCollection xmlns:gml="http://www.opengis.net/gml/3.2"
+			xmlns:ns1="http://www.w3.org/1999/xhtml" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+			xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gsr="http://www.isotc211.org/2005/gsr"
+			xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gts="http://www.isotc211.org/2005/gts"
+			xmlns:xe="http://www.xerleben.de" xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty"
+			gml:id="_b9fc67a2-af71-409f-9019-9c0076bc7632"
+			xsi:schemaLocation="http://www.xerleben.de file:/home/bretschneider/Projekte/rvrxerleben2/20_entwicklung/22_realisierung/workspaces/deegree-workspace-xerleben/appschemas/xe.xsd">
+			<!-- XE_Aussichtspunkt -->
+			<gml:featureMember>
+				<xe:XE_Aussichtspunkt>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.1079979 50.7347665</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2001-12-31T12:00:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2001-12-31T12:00:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>22501000</xe:objektCode>
+					<xe:objektFunktion>Aussichtspunkt</xe:objektFunktion>
+					<xe:objektKategorie>XE_Aussichtspunkt</xe:objektKategorie>
+					<xe:objektUUID>cf000dd6-1f10-4d3c-88d0-855058885f17</xe:objektUUID>
+					<xe:objektName>Alter Zoll</xe:objektName>
+				</xe:XE_Aussichtspunkt>
+			</gml:featureMember>
+			<!-- XE_Autoverkehr -->
+			<gml:featureMember>
+				<xe:XE_Aussichtspunkt>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.1147626 50.7382625</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2001-12-31T12:00:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2001-12-31T12:00:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>67101040</xe:objektCode>
+					<xe:objektFunktion>Parkhaus</xe:objektFunktion>
+					<xe:objektKategorie>XE_Autoverkehr</xe:objektKategorie>
+					<xe:objektUUID>708860ed-0680-4c4d-9a9f-7803b28c01bb</xe:objektUUID>
+					<xe:objektName>Parkhaus im Brückenforum</xe:objektName>
+				</xe:XE_Aussichtspunkt>
+			</gml:featureMember>
+			<!-- XE_Baden -->
+			<!-- XE_Bauwerk -->
+			<!-- XE_Behoerde -->
+			<!-- XE_Denkmal -->
+			<!-- XE_Erholung -->
+			<!-- XE_Flughafen -->
+			<gml:featureMember>
+				<xe:XE_Flughafen>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.1238008 50.8790625</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2008-07-11T14:39:00+01:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2013-02-25T11:37:00+01:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>66401200</xe:objektCode>
+					<xe:objektFunktion>InternationalerFlughafen</xe:objektFunktion>
+					<xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+					<xe:objektUUID>d35abf36-8132-42ae-8a74-f0b511237ecc</xe:objektUUID>
+					<xe:objektName>Köln-Bonn Flughafen (CGN)</xe:objektName>
+					<xe:objektAdresse>
+						<xe:XE_Adresse>
+							<xe:strasse>Kennedystraße</xe:strasse>
+							<xe:ortsteil>Wahn</xe:ortsteil>
+							<xe:plz>51147</xe:plz>
+							<xe:ort>Köln</xe:ort>
+							<xe:land>Deutschland</xe:land>
+						</xe:XE_Adresse>
+					</xe:objektAdresse>
+					<xe:objektEmail>information@koeln-bonn-airport.de </xe:objektEmail>
+					<xe:objektTelefon>
+						<xe:XE_Telefon>
+							<xe:vorwahlInternational>49</xe:vorwahlInternational>
+							<xe:vorwahl>2203</xe:vorwahl>
+							<xe:ortsanschluss>404001</xe:ortsanschluss>
+						</xe:XE_Telefon>
+					</xe:objektTelefon>
+					<xe:objektFax>
+						<xe:XE_Telefon>
+							<xe:vorwahlInternational>49</xe:vorwahlInternational>
+							<xe:vorwahl>2203</xe:vorwahl>
+							<xe:ortsanschluss>404044</xe:ortsanschluss>
+						</xe:XE_Telefon>
+					</xe:objektFax>
+					<xe:infoBeschreibung>Der Flughafen Köln/Bonn „Konrad Adenauer“
+						(ICAO: EDDK, IATA: CGN) ist ein internationaler Verkehrsflughafen.
+					</xe:infoBeschreibung>
+					<xe:infoExterneInfo>http://www.koeln-bonn-airport.de
+					</xe:infoExterneInfo>
+				</xe:XE_Flughafen>
+			</gml:featureMember>
+			<!-- XE_Gastronomie -->
+			<gml:featureMember>
+				<xe:XE_Gastronomie>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.123403 50.878462</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2009-12-15T06:21:00+01:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2009-12-15T06:21:00+01:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>11201200</xe:objektCode>
+					<xe:objektFunktion>ImbissFastfood</xe:objektFunktion>
+					<xe:objektKategorie>XE_Gastronomie</xe:objektKategorie>
+					<xe:objektUUID>b91540fa-00e9-47df-b040-33449d1b6375</xe:objektUUID>
+					<xe:objektName>Subway</xe:objektName>
+				</xe:XE_Gastronomie>
+			</gml:featureMember>
+			<!-- XE_Gefahrenstelle -->
+			<!-- XE_Gesundheit -->
+			<!-- XE_Gewerbegebiet -->
+			<!-- XE_Gewerbeimmobilie -->
+			<!-- XE_Gotteshaus -->
+			<gml:featureMember>
+				<xe:XE_Gotteshaus>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.1494537 50.6893813</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2001-12-31T12:00:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2001-12-31T12:00:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>22601200</xe:objektCode>
+					<xe:objektFunktion>Moschee</xe:objektFunktion>
+					<xe:objektKategorie>XE_Gotteshaus</xe:objektKategorie>
+					<xe:objektUUID>61df6fc5-db11-4f02-9657-167e4f35822a</xe:objektUUID>
+					<xe:objektName>Al Ansar Moschee</xe:objektName>
+					<xe:objektAdresse>
+						<xe:XE_Adresse>
+							<xe:strasse>Bonner Straße</xe:strasse>
+							<xe:hausnr>93</xe:hausnr>
+							<xe:plz>53173</xe:plz>
+							<xe:ort>Bonn</xe:ort>
+							<xe:land>Deutschland</xe:land>
+						</xe:XE_Adresse>
+					</xe:objektAdresse>
+				</xe:XE_Gotteshaus>
+			</gml:featureMember>
+			<!-- XE_Kino -->
+			<gml:featureMember>
+				<xe:XE_Kino>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.1016382 50.737723</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2001-12-31T12:00:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2001-12-31T12:00:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>21401050</xe:objektCode>
+					<xe:objektFunktion>Multiplexkino</xe:objektFunktion>
+					<xe:objektKategorie>XE_Kino</xe:objektKategorie>
+					<xe:objektUUID>b5191ad5-8526-4294-a59e-d57672f3f86e</xe:objektUUID>
+					<xe:objektName>WOKI</xe:objektName>
+					<xe:objektAdresse>
+						<xe:XE_Adresse>
+							<xe:strasse>Bertha-von-Suttner-Platz</xe:strasse>
+							<xe:hausnr>7</xe:hausnr>
+							<xe:plz>53111</xe:plz>
+							<xe:ort>Bonn</xe:ort>
+							<xe:land>Deutschland</xe:land>
+						</xe:XE_Adresse>
+					</xe:objektAdresse>
+					<xe:infoExterneInfo>http://www.woki.de</xe:infoExterneInfo>
+				</xe:XE_Kino>
+			</gml:featureMember>
+			<!-- XE_Kultureinrichtung -->
+			<!-- XE_Landmarke -->
+			<!-- XE_Lehrpfad -->
+			<!-- XE_Logistik -->
+			<!-- XE_Mediathek -->
+			<!-- XE_Messe -->
+			<!-- XE_Militaer -->
+			<!-- XE_Moeblierung -->
+			<!-- XE_Museum -->
+			<gml:featureMember>
+				<xe:XE_Museum>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.1138571 50.7222535</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2001-12-31T12:00:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2001-12-31T12:00:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>21101250</xe:objektCode>
+					<xe:objektFunktion>Naturkundemuseum</xe:objektFunktion>
+					<xe:objektKategorie>XE_Museum</xe:objektKategorie>
+					<xe:objektUUID>56d007ee-32ae-4223-a5f7-3cf42f3689b8</xe:objektUUID>
+					<xe:objektName>Zoologisches Forschungsmuseum Alexander Koenig
+					</xe:objektName>
+				</xe:XE_Museum>
+			</gml:featureMember>
+			<!-- XE_Nachtleben -->
+			<gml:featureMember>
+				<xe:XE_Nachtleben>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.0900888 50.7393835</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2001-12-31T12:00:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2001-12-31T12:00:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>21501000</xe:objektCode>
+					<xe:objektFunktion>BarNachtlokal</xe:objektFunktion>
+					<xe:objektKategorie>XE_Nachtleben</xe:objektKategorie>
+					<xe:objektUUID>ec66f19d-e66b-4dba-b99d-4631cd71d9c9</xe:objektUUID>
+					<xe:objektName>Nyx</xe:objektName>
+					<xe:objektAdresse>
+						<xe:XE_Adresse>
+							<xe:strasse>Vorgebirgsstraße</xe:strasse>
+							<xe:hausnr>19</xe:hausnr>
+							<xe:plz>53111</xe:plz>
+							<xe:ort>Bonn</xe:ort>
+							<xe:land>Deutschland</xe:land>
+						</xe:XE_Adresse>
+					</xe:objektAdresse>
+					<xe:infoExterneInfo>http://www.das-nyx.de</xe:infoExterneInfo>
+					<xe:metaInfodatum>2001-12-31T12:00:00</xe:metaInfodatum>
+				</xe:XE_Nachtleben>
+			</gml:featureMember>
+			<!-- XE_NaturLandschaft -->
+			<!-- XE_OEVHaltestelle -->
+			<!-- XE_OEVLinie -->
+			<!-- XE_OEVTrasse -->
+			<!-- XE_OrtVonInteresse -->
+			<!-- XE_Radverkehr -->
+			<!-- XE_Radwanderweg -->
+			<!-- XE_Rast -->
+			<!-- XE_Reitweg -->
+			<!-- XE_Religioeses -->
+			<!-- XE_Rettung -->
+			<!-- XE_Sammelstelle -->
+			<gml:featureMember>
+				<xe:XE_Sammelstelle>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.1440586 50.6923255</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2001-12-31T12:00:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap
+					</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2001-12-31T12:00:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>64201100</xe:objektCode>
+					<xe:objektFunktion>Recyclinghof</xe:objektFunktion>
+					<xe:objektKategorie>XE_Sammelstelle</xe:objektKategorie>
+					<xe:objektUUID>b92ae97e-d426-465a-ac4c-49b9b5a2f05e</xe:objektUUID>
+					<xe:objektName>Sammelstelle für Wertstoffe und Sondermüll
+					</xe:objektName>
+					<xe:infoBeschreibung>Annahme von Sperr- und Hausmüll, Glas,
+						Schrott, Bauschutt, Grünschnitt, Kleinelektro, Sondermüll
+					</xe:infoBeschreibung>
+				</xe:XE_Sammelstelle>
+			</gml:featureMember>
+			<!-- XE_Sammlung -->
+			<!-- XE_SchuleAllgemein -->
+			<!-- XE_SchuleSpezial -->
+			<!-- XE_Servicestelle -->
+			<!-- XE_Shopping -->
+			<!-- XE_Siedlung -->
+			<!-- XE_SonstigerFreizeitweg -->
+			<!-- XE_SozialEinrichtung -->
+			<!-- XE_Sport -->
+			<!-- XE_Streckenvariante -->
+			<!-- XE_Tankstelle -->
+			<gml:featureMember>
+				<xe:XE_Tankstelle>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.1012591 50.7383108</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2001-12-31T12:00:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2001-12-31T12:00:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>67201000</xe:objektCode>
+					<xe:objektFunktion>Tankstelle</xe:objektFunktion>
+					<xe:objektKategorie>XE_Tankstelle</xe:objektKategorie>
+					<xe:objektUUID>1ae29529-7186-4f1d-b4bc-7636eb974e70</xe:objektUUID>
+					<xe:objektName>Total</xe:objektName>
+				</xe:XE_Tankstelle>
+			</gml:featureMember>
+			<!-- XE_TechnischesBauwerk -->
+			<!-- XE_TheaterMusik -->
+			<!-- XE_Tiermedizin -->
+			<!-- XE_Tierwelt -->
+			<!-- XE_Traegerabschnitt -->
+			<!-- XE_Unterkunft -->
+			<!-- XE_Unternehmen -->
+			<!-- XE_VerEntsorgungsbetrieb -->
+			<!-- XE_Veranstaltung -->
+			<!-- XE_Veranstaltungsort -->
+			<!-- XE_Verband -->
+			<!-- XE_Wanderweg -->
+			<!-- XE_Wasserverkehr -->
+			<!-- XE_Wegabschnitt -->
+			<!-- XE_Wegweisung -->
+			<!-- XE_Weiterbildung -->
+			<!-- XE_Wissenschaft -->
+			<gml:featureMember>
+				<xe:XE_Wissenschaft>
+					<xe:lageAnfasspunkt>
+						<gml:Point srsName="EPSG:4326">
+							<gml:pos>7.1022309 50.733798</gml:pos>
+						</gml:Point>
+					</xe:lageAnfasspunkt>
+					<xe:metaInfoquelle>OpenStreetMap</xe:metaInfoquelle>
+					<xe:metaLebenszeitStart>2001-12-31T12:00:00
+					</xe:metaLebenszeitStart>
+					<xe:metaPflegendeStelle>OpenStreetMap</xe:metaPflegendeStelle>
+					<xe:metaZuletztBearbeitetAm>2001-12-31T12:00:00
+					</xe:metaZuletztBearbeitetAm>
+					<xe:objektCode>61301000</xe:objektCode>
+					<xe:objektFunktion>Hochschule</xe:objektFunktion>
+					<xe:objektKategorie>XE_Wissenschaft</xe:objektKategorie>
+					<xe:objektUUID>e9474c8a-52db-4056-ae5d-715c6ef38f92</xe:objektUUID>
+					<xe:objektName>Rheinische Friedrich-Wilhelms-Universität Bonn
+					</xe:objektName>
+				</xe:XE_Wissenschaft>
+			</gml:featureMember>
+		</gml:FeatureCollection>
+	</wfs:Insert>
 </wfs:Transaction>
