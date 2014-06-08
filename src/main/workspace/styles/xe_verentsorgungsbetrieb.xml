@@ -1,6 +1,29 @@
 <FeatureTypeStyle xmlns='http://www.opengis.net/se' xmlns:ogc='http://www.opengis.net/ogc' xmlns:deegreeogc='http://www.deegree.org/ogc' xmlns:sed='http://www.deegree.org/se' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xe='http://www.xerleben.de' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd http://www.deegree.org/se http://schemas.deegree.org/se/1.1.0/Symbolizer-deegree.xsd'>	<Name>XE VerEntsorgungsbetrieb</Name>
 	<FeatureTypeName>xe:XE_VerEntsorgungsbetrieb</FeatureTypeName>
 	<Rule>
+		<Name>xe_verentsorgungsbetrieb_polygon</Name>
+		<Description>
+			<Title>XE VerEntsorgungsbetrieb (Polygon)</Title>
+		</Description>
+		<PolygonSymbolizer uom='meter'>
+			<Geometry>
+				<ogc:PropertyName>xe:lageFlaeche</ogc:PropertyName>
+			</Geometry>
+			<Fill>
+				<SvgParameter name='fill'>#000000</SvgParameter>
+				<SvgParameter name='fill-opacity'>0.1</SvgParameter>
+			</Fill>
+			<Stroke>
+				<SvgParameter name='stroke'>#000000</SvgParameter>
+				<SvgParameter name='stroke-opacity'>1.0</SvgParameter>
+				<SvgParameter name='stroke-width'>10</SvgParameter>
+				<SvgParameter name='stroke-linecap'>round</SvgParameter>
+				<SvgParameter name='stroke-linejoin'>round</SvgParameter>
+				<SvgParameter name='stroke-dasharray'>1 1</SvgParameter>
+			</Stroke>
+		</PolygonSymbolizer>
+	</Rule>
+	<Rule>
 		<Name>xe_verentsorgungsbetrieb_point</Name>
 		<Description>
 			<Title>XE VerEntsorgungsbetrieb (Point)</Title>
@@ -43,47 +66,5 @@
 				<Radius>1.2</Radius>
 			</Halo>
 		</TextSymbolizer>
-	</Rule>
-	<Rule>
-		<Name>xe_verentsorgungsbetrieb_line</Name>
-		<Description>
-			<Title>XE VerEntsorgungsbetrieb (Line)</Title>
-		</Description>
-		<LineSymbolizer uom='meter'>
-			<Geometry>
-				<ogc:PropertyName>xe:lageVerlauf</ogc:PropertyName>
-			</Geometry>
-			<Stroke>
-				<SvgParameter name='stroke'>#000000</SvgParameter>
-				<SvgParameter name='stroke-opacity'>0.5</SvgParameter>
-				<SvgParameter name='stroke-width'>1</SvgParameter>
-				<SvgParameter name='stroke-linecap'>round</SvgParameter>
-				<SvgParameter name='stroke-linejoin'>round</SvgParameter>
-				<SvgParameter name='stroke-dasharray'>1 1</SvgParameter>
-			</Stroke>
-		</LineSymbolizer>
-	</Rule>
-	<Rule>
-		<Name>xe_verentsorgungsbetrieb_polygon</Name>
-		<Description>
-			<Title>XE VerEntsorgungsbetrieb (Polygon)</Title>
-		</Description>
-		<PolygonSymbolizer uom='meter'>
-			<Geometry>
-				<ogc:PropertyName>xe:lageFlaeche</ogc:PropertyName>
-			</Geometry>
-			<Fill>
-				<SvgParameter name='fill'>#000000</SvgParameter>
-				<SvgParameter name='fill-opacity'>0.5</SvgParameter>
-			</Fill>
-			<Stroke>
-				<SvgParameter name='stroke'>#000000</SvgParameter>
-				<SvgParameter name='stroke-opacity'>0.5</SvgParameter>
-				<SvgParameter name='stroke-width'>1</SvgParameter>
-				<SvgParameter name='stroke-linecap'>round</SvgParameter>
-				<SvgParameter name='stroke-linejoin'>round</SvgParameter>
-				<SvgParameter name='stroke-dasharray'>1 1</SvgParameter>
-			</Stroke>
-		</PolygonSymbolizer>
 	</Rule>
 </FeatureTypeStyle>

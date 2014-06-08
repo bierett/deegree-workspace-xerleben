@@ -37,8 +37,54 @@ sub parseStyles {
 		print output "<FeatureTypeStyle xmlns='http://www.opengis.net/se' xmlns:ogc='http://www.opengis.net/ogc' xmlns:deegreeogc='http://www.deegree.org/ogc' xmlns:sed='http://www.deegree.org/se' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xe='http://www.xerleben.de' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd http://www.deegree.org/se http://schemas.deegree.org/se/1.1.0/Symbolizer-deegree.xsd'>";
 		print output "\t<Name>XE ".$title."</Name>\n";
 		print output "\t<FeatureTypeName>xe:XE_".$title."</FeatureTypeName>\n";
+		
+                        #Polygon
+                        print output "\t<Rule>\n";
+				print output "\t\t<Name>".$name."_polygon</Name>\n";
+				print output "\t\t<Description>\n";
+					print output "\t\t\t<Title>XE ".$title." (Polygon)</Title>\n";
+				print output "\t\t</Description>\n";
+                                print output "\t\t<PolygonSymbolizer uom='meter'>\n";
+                                    print output "\t\t\t<Geometry>\n";
+                                        print output "\t\t\t\t<ogc:PropertyName>xe:lageFlaeche</ogc:PropertyName>\n";
+                                    print output "\t\t\t</Geometry>\n";
+                                    print output "\t\t\t<Fill>\n";
+                                        print output "\t\t\t\t<SvgParameter name='fill'>#000000</SvgParameter>\n";
+                                        print output "\t\t\t\t<SvgParameter name='fill-opacity'>0.1</SvgParameter>\n";
+                                    print output "\t\t\t</Fill>\n";
+                                    print output "\t\t\t<Stroke>\n";
+                                        print output "\t\t\t\t<SvgParameter name='stroke'>#000000</SvgParameter>\n";
+                                        print output "\t\t\t\t<SvgParameter name='stroke-opacity'>1.0</SvgParameter>\n";
+                                        print output "\t\t\t\t<SvgParameter name='stroke-width'>10</SvgParameter>\n";
+                                        print output "\t\t\t\t<SvgParameter name='stroke-linecap'>round</SvgParameter>\n";
+                                        print output "\t\t\t\t<SvgParameter name='stroke-linejoin'>round</SvgParameter>\n";
+                                        print output "\t\t\t\t<SvgParameter name='stroke-dasharray'>1 1</SvgParameter>\n";
+                                    print output "\t\t\t</Stroke>\n";
+                                print output "\t\t</PolygonSymbolizer>\n";
+			print output "\t</Rule>\n";
 
-                        #Point
+                        #Line
+#                        print output "\t<Rule>\n";
+#				print output "\t\t<Name>".$name."_line</Name>\n";
+#				print output "\t\t<Description>\n";
+#					print output "\t\t\t<Title>XE ".$title." (Line)</Title>\n";
+#				print output "\t\t</Description>\n";
+#                                print output "\t\t<LineSymbolizer uom='meter'>\n";
+#                                    print output "\t\t\t<Geometry>\n";
+#                                        print output "\t\t\t\t<ogc:PropertyName>xe:lageVerlauf</ogc:PropertyName>\n";
+#                                    print output "\t\t\t</Geometry>\n";
+#                                    print output "\t\t\t<Stroke>\n";
+#                                        print output "\t\t\t\t<SvgParameter name='stroke'>#000000</SvgParameter>\n";
+#                                        print output "\t\t\t\t<SvgParameter name='stroke-opacity'>0.5</SvgParameter>\n";
+#                                        print output "\t\t\t\t<SvgParameter name='stroke-width'>1</SvgParameter>\n";
+#                                        print output "\t\t\t\t<SvgParameter name='stroke-linecap'>round</SvgParameter>\n";
+#                                        print output "\t\t\t\t<SvgParameter name='stroke-linejoin'>round</SvgParameter>\n";
+#                                        print output "\t\t\t\t<SvgParameter name='stroke-dasharray'>1 1</SvgParameter>\n";
+#                                    print output "\t\t\t</Stroke>\n";
+#                                print output "\t\t</LineSymbolizer>\n";
+#			print output "\t</Rule>\n";
+		
+			#Point
 			print output "\t<Rule>\n";
                                 print output "\t\t<Name>".$name."_point</Name>\n";
 				print output "\t\t<Description>\n";
@@ -85,54 +131,8 @@ sub parseStyles {
                                 print output "\t\t\t\t<Radius>1.2</Radius>\n";
                                 print output "\t\t\t</Halo>\n";
                                 print output "\t\t</TextSymbolizer>\n";
-
 			print output "\t</Rule>\n";
-
-                        #Line
-                        print output "\t<Rule>\n";
-				print output "\t\t<Name>".$name."_line</Name>\n";
-				print output "\t\t<Description>\n";
-					print output "\t\t\t<Title>XE ".$title." (Line)</Title>\n";
-				print output "\t\t</Description>\n";
-                                print output "\t\t<LineSymbolizer uom='meter'>\n";
-                                    print output "\t\t\t<Geometry>\n";
-                                        print output "\t\t\t\t<ogc:PropertyName>xe:lageVerlauf</ogc:PropertyName>\n";
-                                    print output "\t\t\t</Geometry>\n";
-                                    print output "\t\t\t<Stroke>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke'>#000000</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-opacity'>0.5</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-width'>1</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-linecap'>round</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-linejoin'>round</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-dasharray'>1 1</SvgParameter>\n";
-                                    print output "\t\t\t</Stroke>\n";
-                                print output "\t\t</LineSymbolizer>\n";
-			print output "\t</Rule>\n";
-
-                        #Polygon
-                        print output "\t<Rule>\n";
-				print output "\t\t<Name>".$name."_polygon</Name>\n";
-				print output "\t\t<Description>\n";
-					print output "\t\t\t<Title>XE ".$title." (Polygon)</Title>\n";
-				print output "\t\t</Description>\n";
-                                print output "\t\t<PolygonSymbolizer uom='meter'>\n";
-                                    print output "\t\t\t<Geometry>\n";
-                                        print output "\t\t\t\t<ogc:PropertyName>xe:lageFlaeche</ogc:PropertyName>\n";
-                                    print output "\t\t\t</Geometry>\n";
-                                    print output "\t\t\t<Fill>\n";
-                                        print output "\t\t\t\t<SvgParameter name='fill'>#000000</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='fill-opacity'>0.5</SvgParameter>\n";
-                                    print output "\t\t\t</Fill>\n";
-                                    print output "\t\t\t<Stroke>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke'>#000000</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-opacity'>0.5</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-width'>1</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-linecap'>round</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-linejoin'>round</SvgParameter>\n";
-                                        print output "\t\t\t\t<SvgParameter name='stroke-dasharray'>1 1</SvgParameter>\n";
-                                    print output "\t\t\t</Stroke>\n";
-                                print output "\t\t</PolygonSymbolizer>\n";
-			print output "\t</Rule>\n";
+			
 		print output "</FeatureTypeStyle>\n";
 	}
 }
