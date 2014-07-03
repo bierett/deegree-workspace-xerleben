@@ -1,0 +1,53 @@
+<ShapeFeatureStore configVersion="3.1.0" xmlns="http://www.deegree.org/datasource/feature/shape"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.deegree.org/datasource/feature/shape http://schemas.deegree.org/datasource/feature/shape/3.1.0/shape.xsd">
+
+  <!-- [0...1] CRS for storing geometries -->
+  <StorageCRS>EPSG:4326</StorageCRS>
+
+  <!-- [0...1] Local name of the feature type (defaults to base name of shape file) -->
+  <FeatureTypeName>XE_OrtVonInteresse</FeatureTypeName>
+
+  <!-- [0...1] Namespace of the feature type (defaults to NULL namespace) -->
+  <FeatureTypeNamespace>http://www.xerleben.de</FeatureTypeNamespace>
+
+  <!-- [0...1] Prefix of the feature type (defaults to auto-generated prefix) -->
+  <FeatureTypePrefix>xe</FeatureTypePrefix>
+
+  <!-- [1] Name of the shape file -->
+  <File>../../data/XErleben_XE_OVI_P_V1_1_9</File>
+
+  <!-- [0...1] Encoding of the text fields -->
+  <Encoding>ISO-8859-1</Encoding>
+
+  <!-- [0...1] Should an index for alphanumeric fields be generated -->
+  <GenerateAlphanumericIndexes>false</GenerateAlphanumericIndexes>
+  
+  <!-- [0...1] Mapping is optional. If not set all columns will be automapped -->
+  <Mapping>
+    <SimpleProperty name="ID" mapping="ID" />
+    <SimpleProperty name="O_NAME" mapping="O_NAME" />
+    <SimpleProperty name="O_NAMENSZU" mapping="O_NAMENSZU" />
+    <SimpleProperty name="O_SYNONYM" mapping="O_SYNONYM" />
+    <SimpleProperty name="O_UUID" mapping="O_UUID" />
+    <SimpleProperty name="O_THESVERS" mapping="O_THESVERS" />
+    <SimpleProperty name="O_KAT" mapping="O_KAT" />
+    <SimpleProperty name="O_FKT" mapping="O_FKT" />
+    <SimpleProperty name="O_CODE" mapping="O_CODE" />
+    <SimpleProperty name="O_WEITFKT" mapping="O_WEITFKT" />
+    <SimpleProperty name="O_CODE" mapping="O_CODE" />
+    
+    <SimpleProperty name="OAD_LAND" mapping="OAD_LAND" />
+    <SimpleProperty name="OAD_ORT" mapping="OAD_ORT" />
+    <SimpleProperty name="OAD_ORTSTE" mapping="OAD_ORTSTE" />
+    <SimpleProperty name="OAD_PLZ" mapping="OAD_PLZ" />
+    <SimpleProperty name="OAD_STR" mapping="OAD_STR" />
+    <SimpleProperty name="OAD_HAUSNR" mapping="OAD_HAUSNR" />
+    <SimpleProperty name="O_EMAIL" mapping="O_EMAIL" />
+    
+    <!-- name only must be given -->
+    <GeometryProperty name="GEOM" />
+  </Mapping>
+
+
+</ShapeFeatureStore>
