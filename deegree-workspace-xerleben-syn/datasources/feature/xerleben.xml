@@ -35,8 +35,8 @@
     <SimpleProperty name="O_FKT" mapping="O_FKT" />
     <SimpleProperty name="O_CODE" mapping="O_CODE" />
     <SimpleProperty name="O_WEITFKT" mapping="O_WEITFKT" />
-    <SimpleProperty name="O_CODE" mapping="O_CODE" />
-    
+    <SimpleProperty name="O_WEITCODE" mapping="O_WEITCODE" />
+
     <SimpleProperty name="OAD_LAND" mapping="OAD_LAND" />
     <SimpleProperty name="OAD_ORT" mapping="OAD_ORT" />
     <SimpleProperty name="OAD_ORTSTE" mapping="OAD_ORTSTE" />
@@ -44,8 +44,209 @@
     <SimpleProperty name="OAD_STR" mapping="OAD_STR" />
     <SimpleProperty name="OAD_HAUSNR" mapping="OAD_HAUSNR" />
     <SimpleProperty name="O_EMAIL" mapping="O_EMAIL" />
-    
-    <!-- name only must be given -->
+
+    <SimpleProperty name="OFX_ANSCHL" mapping="OFX_ANSCHL" />
+    <SimpleProperty name="OFX_VORW" mapping="OFX_VORW" />
+    <SimpleProperty name="OFX_VORWIN" mapping="OFX_VORWIN" />
+
+    <SimpleProperty name="OPF_LAND" mapping="OPF_LAND" />
+    <SimpleProperty name="OPF_ORT" mapping="OPF_ORT" />
+    <SimpleProperty name="OPF_PLZ" mapping="OPF_PLZ" />
+    <SimpleProperty name="OPF_POSTFA" mapping="OPF_POSTFA" />
+
+    <SimpleProperty name="OTL_ANSCHL" mapping="OTL_ANSCHL" />
+    <SimpleProperty name="OTL_VORW" mapping="OTL_VORW" />
+    <SimpleProperty name="OTL_VORWIN" mapping="OTL_VORWIN" />
+    <SimpleProperty name="KLA_BEDEUT" mapping="KLA_BEDEUT" />
+    <SimpleProperty name="KLA_TOURIS" mapping="KLA_TOURIS" />
+    <SimpleProperty name="B_ANGEBOT" mapping="B_ANGEBOT" />
+    <SimpleProperty name="B_IMBISS" mapping="B_IMBISS" />
+    <SimpleProperty name="B_KOSTPFL" mapping="B_KOSTPFL" />
+    <SimpleProperty name="B_OEFFENTL" mapping="B_OEFFENTL" />
+    <SimpleProperty name="B_KOSTEN" mapping="B_KOSTEN" />
+    <SimpleProperty name="B_OEFTEXT" mapping="B_OEFTEXT" />
+
+    <SimpleProperty name="L_AFP_OST" mapping="L_AFP_OST" />
+    <SimpleProperty name="L_AFP_NORD" mapping="L_AFP_NORD" />
+    <SimpleProperty name="L_VERLAUF" mapping="L_VERLAUF" />
+    <SimpleProperty name="L_FLAECHE" mapping="L_FLAECHE" />
+    <SimpleProperty name="L_PUNKTMEN" mapping="L_PUNKTMEN" />
+    <SimpleProperty name="L_HOEHENHN" mapping="L_HOEHENHN" />
+    <SimpleProperty name="L_HOEHEGRU" mapping="L_HOEHEGRU" />
+    <SimpleProperty name="I_EXTINFO" mapping="I_EXTINFO" />
+    <SimpleProperty name="I_FLAECHM2" mapping="I_FLAECHM2" />
+    <SimpleProperty name="I_BESCHR" mapping="I_BESCHR" />
+    <SimpleProperty name="I_LAENGEM" mapping="I_LAENGEM" />
+    <SimpleProperty name="I_STATUS" mapping="I_STATUS" />
+    <SimpleProperty name="I_TRAEGART" mapping="I_TRAEGART" />
+    <SimpleProperty name="I_HATTRAEG" mapping="I_HATTRAEG" />
+    <SimpleProperty name="I_VERANST" mapping="I_VERANST" />
+    <SimpleProperty name="I_ZUSINFO" mapping="I_ZUSINFO" />
+    <SimpleProperty name="M_GUELENDE" mapping="M_GUELENDE" />
+    <SimpleProperty name="M_GUELSTAR" mapping="M_GUELSTAR" />
+    <SimpleProperty name="M_INFOQUEL" mapping="M_INFOQUEL" />
+    <SimpleProperty name="M_LEBZENDE" mapping="M_LEBZENDE" />
+    <SimpleProperty name="M_LEBZSTAR" mapping="M_LEBZSTAR" />
+    <SimpleProperty name="M_PFLGSTEL" mapping="M_PFLGSTEL" />
+    <SimpleProperty name="M_SCHLWORT" mapping="M_SCHLWORT" />
+    <SimpleProperty name="M_BEARBTAM" mapping="M_BEARBTAM" />
+    <SimpleProperty name="P_ROLLE" mapping="P_ROLLE" />
+    <SimpleProperty name="P_ANREDE" mapping="P_ANREDE" />
+    <!-- SimpleProperty name="P_TITEL" mapping="P_TITEL" / -->
+    <SimpleProperty name="P_VORNAME" mapping="P_VORNAME" />
+    <SimpleProperty name="P_NAME" mapping="P_NAME" />
+    <!-- SimpleProperty name="P_FIRMA" mapping="P_FIRMA" / -->
+    <!-- SimpleProperty name="P_URL" mapping="P_URL" / -->
+    <SimpleProperty name="P_EMAIL" mapping="P_EMAIL" />
+
+    <SimpleProperty name="PAD_LAND" mapping="PAD_LAND" />
+    <SimpleProperty name="PAD_ORT" mapping="PAD_ORT" />
+    <SimpleProperty name="PAD_ORTSTE" mapping="PAD_ORTSTE" />
+    <SimpleProperty name="PAD_PLZ" mapping="PAD_PLZ" />
+    <SimpleProperty name="PAD_STR" mapping="PAD_STR" />
+    <SimpleProperty name="PAD_HAUSNR" mapping="PAD_HAUSNR" />
+
+    <SimpleProperty name="PFX_ANSCHL" mapping="PFX_ANSCHL" />
+    <SimpleProperty name="PFX_VORW" mapping="PFX_VORW" />
+    <SimpleProperty name="PFX_VORWIN" mapping="PFX_VORWIN" />
+
+    <SimpleProperty name="PMO_ANSCHL" mapping="PMO_ANSCHL" />
+    <SimpleProperty name="PMO_VORW" mapping="PMO_VORW" />
+    <SimpleProperty name="PMO_VORWIN" mapping="PMO_VORWIN" />
+
+    <!-- SimpleProperty name="PPF_LAND" mapping="PPF_LAND" / -->
+    <!-- SimpleProperty name="PPF_ORT" mapping="PPF_ORT" / -->
+    <!-- SimpleProperty name="PPF_PLZ" mapping="PPF_PLZ" / -->
+    <!-- SimpleProperty name="PPF_POSTFA" mapping="PPF_POSTFA" / -->
+
+    <SimpleProperty name="PTL_ANSCHL" mapping="PTL_ANSCHL" />
+    <SimpleProperty name="PTL_VORW" mapping="PTL_VORW" />
+    <SimpleProperty name="PTL_VORWIN" mapping="PTL_VORWIN" />
+
+    <!-- SimpleProperty name="EI1_BESCHR" mapping="EI1_BESCHR" / -->
+    <SimpleProperty name="EI1_TITEL" mapping="EI1_TITEL" />
+    <SimpleProperty name="EI1_LINK" mapping="EI1_LINK" />
+    <SimpleProperty name="EI1_ART" mapping="EI1_ART" />
+    <!-- SimpleProperty name="EI1_MIMETY" mapping="EI1_MIMETY" / -->
+    <!-- SimpleProperty name="EI1_NAMESP" mapping="EI1_NAMESP" / -->
+
+    <!-- SimpleProperty name="EI2_BESCHR" mapping="EI2_BESCHR" / -->
+    <SimpleProperty name="EI2_TITEL" mapping="EI2_TITEL" />
+    <SimpleProperty name="EI2_LINK" mapping="EI2_LINK" />
+    <SimpleProperty name="EI2_ART" mapping="EI2_ART" />
+    <!-- SimpleProperty name="EI2_MIMETY" mapping="EI2_MIMETY" / -->
+    <!-- SimpleProperty name="EI2_NAMESP" mapping="EI2_NAMESP" / -->
+
+    <SimpleProperty name="BGR_ROLLST" mapping="BGR_ROLLST" />
+    <SimpleProperty name="BGR_KINDWA" mapping="BGR_KINDWA" />
+    <SimpleProperty name="BGR_BLINDE" mapping="BGR_BLINDE" />
+    <SimpleProperty name="BGR_SEHBEH" mapping="BGR_SEHBEH" />
+    <SimpleProperty name="BGR_TAUBE" mapping="BGR_TAUBE" />
+    <SimpleProperty name="BGR_FAMILI" mapping="BGR_FAMILI" />
+    <SimpleProperty name="BGR_HOERB" mapping="BGR_HOERB" />
+    <SimpleProperty name="BGR_ROLLAT" mapping="BGR_ROLLAT" />
+    <SimpleProperty name="BGR_GEHBEH" mapping="BGR_GEHBEH" />
+    <SimpleProperty name="BGR_LERNB" mapping="BGR_LERNB" />
+    <SimpleProperty name="BGR_SENIOR" mapping="BGR_SENIOR" />
+
+    <SimpleProperty name="PRD_BEZEIC" mapping="PRD_BEZEIC" />
+    <SimpleProperty name="PRD_NUMERI" mapping="PRD_NUMERI" />
+    <SimpleProperty name="PRD_EINHEI" mapping="PRD_EINHEI" />
+    <SimpleProperty name="PRD_TEXT" mapping="PRD_TEXT" />
+    <SimpleProperty name="PRD_GUELTI" mapping="PRD_GUELTI" />
+    <SimpleProperty name="PRD_INSTIT" mapping="PRD_INSTIT" />
+
+    <SimpleProperty name="ZGR_ZIELGR" mapping="ZGR_ZIELGR" />
+
+    <SimpleProperty name="BEZ_VERORT" mapping="BEZ_VERORT" />
+    <SimpleProperty name="BEZ_NACHBA" mapping="BEZ_NACHBA" />
+    <SimpleProperty name="BEZ_FILVON" mapping="BEZ_FILVON" />
+    <SimpleProperty name="BEZ_BSTVON" mapping="BEZ_BSTVON" />
+    <SimpleProperty name="BEZ_NAHVON" mapping="BEZ_NAHVON" />
+    <SimpleProperty name="BEZ_AEHNLI" mapping="BEZ_AEHNLI" />
+
+    <SimpleProperty name="IGA_KUECHE" mapping="IGA_KUECHE" />
+    <SimpleProperty name="IAP_BLICKR" mapping="IAP_BLICKR" />
+    <SimpleProperty name="IAP_BLICKW" mapping="IAP_BLICKW" />
+    <SimpleProperty name="IMS_FREILI" mapping="IMS_FREILI" />
+    <SimpleProperty name="IRL_WALLFA" mapping="IRL_WALLFA" />
+    <SimpleProperty name="IBW_ARCHIT" mapping="IBW_ARCHIT" />
+    <SimpleProperty name="IBW_DENKMA" mapping="IBW_DENKMA" />
+    <SimpleProperty name="IBW_INDUDM" mapping="IBW_INDUDM" />
+    <SimpleProperty name="IBW_RUINE" mapping="IBW_RUINE" />
+    <SimpleProperty name="IBW_NUTZ" mapping="IBW_NUTZ" />
+    <SimpleProperty name="INL_NATURS" mapping="INL_NATURS" />
+    <SimpleProperty name="ISP_INOUT" mapping="ISP_INOUT" />
+    <SimpleProperty name="IWG_ART" mapping="IWG_ART" />
+    <SimpleProperty name="IWG_KATNAM" mapping="IWG_KATNAM" />
+    <SimpleProperty name="IWG_NR" mapping="IWG_NR" />
+    <SimpleProperty name="IAV_WC" mapping="IAV_WC" />
+    <SimpleProperty name="IAV_BEWACH" mapping="IAV_BEWACH" />
+    <SimpleProperty name="IBH_EBENE" mapping="IBH_EBENE" />
+    <SimpleProperty name="IBH_NUTS" mapping="IBH_NUTS" />
+    <SimpleProperty name="IVE_FACH" mapping="IVE_FACH" />
+    <SimpleProperty name="IGF_GEFAHR" mapping="IGF_GEFAHR" />
+    <SimpleProperty name="IGS_FACH" mapping="IGS_FACH" />
+    <SimpleProperty name="IVB_EBENE" mapping="IVB_EBENE" />
+    <SimpleProperty name="IVB_NUTS" mapping="IVB_NUTS" />
+    <SimpleProperty name="ILI_STARTH" mapping="ILI_STARTH" />
+    <SimpleProperty name="ILI_ENDH" mapping="ILI_ENDH" />
+    <SimpleProperty name="ILI_MITRAD" mapping="ILI_MITRAD" />
+    <SimpleProperty name="ILI_NR" mapping="ILI_NR" />
+    <SimpleProperty name="IHI_NR" mapping="IHI_NR" />
+    <SimpleProperty name="ITR_STILLG" mapping="ITR_STILLG" />
+    <SimpleProperty name="ITR_TOURIS" mapping="ITR_TOURIS" />
+    <SimpleProperty name="ISA_GUT" mapping="ISA_GUT" />
+    <SimpleProperty name="IRV_BHF" mapping="IRV_BHF" />
+    <SimpleProperty name="IRV_BEWACH" mapping="IRV_BEWACH" />
+    <SimpleProperty name="ITS_BSTOFF" mapping="ITS_BSTOFF" />
+    <SimpleProperty name="ISE_AMSTA" mapping="ISE_AMSTA" />
+    <SimpleProperty name="ISE_TOURIS" mapping="ISE_TOURIS" />
+    <SimpleProperty name="ISC_FOERDE" mapping="ISC_FOERDE" />
+    <SimpleProperty name="ISC_PAEDA" mapping="ISC_PAEDA" />
+    <SimpleProperty name="ISC_ZEIT" mapping="ISC_ZEIT" />
+    <SimpleProperty name="IVS_VONDA" mapping="IVS_VONDA" />
+    <SimpleProperty name="IVS_BISDA" mapping="IVS_BISDA" />
+    <SimpleProperty name="IVS_VONZE" mapping="IVS_VONZE" />
+    <SimpleProperty name="IVS_BISZE" mapping="IVS_BISZE" />
+    <SimpleProperty name="IVS_TURNUS" mapping="IVS_TURNUS" />
+    <SimpleProperty name="IVS_TTAG" mapping="IVS_TTAG" />
+    <SimpleProperty name="IVS_TTEXT" mapping="IVS_TTEXT" />
+    <SimpleProperty name="IVS_VERKEH" mapping="IVS_VERKEH" />
+    <SimpleProperty name="IVO_PERMAX" mapping="IVO_PERMAX" />
+    <SimpleProperty name="IVO_RAUM" mapping="IVO_RAUM" />
+    <SimpleProperty name="IVO_KOCHST" mapping="IVO_KOCHST" />
+    <SimpleProperty name="IVO_ORT" mapping="IVO_ORT" />
+    <SimpleProperty name="IGI_KAUF" mapping="IGI_KAUF" />
+    <SimpleProperty name="IGI_MIETE" mapping="IGI_MIETE" />
+    <SimpleProperty name="IGI_FREI" mapping="IGI_FREI" />
+    <SimpleProperty name="IUN_BRANCH" mapping="IUN_BRANCH" />
+    <SimpleProperty name="IUN_VERZ" mapping="IUN_VERZ" />
+    <SimpleProperty name="IUN_VERS" mapping="IUN_VERS" />
+
+    <!-- XE_Wegabschnitt -->
+    <!-- SimpleProperty name="O_UUID" mapping="O_UUID" />
+    <SimpleProperty name="IWA_VERLF" mapping="IWA_VERLF" />
+    <SimpleProperty name="IWA_BSM" mapping="IWA_BSM" />
+    <SimpleProperty name="IWA_LAGE" mapping="IWA_LAGE" />
+    <SimpleProperty name="IWA_ZST" mapping="IWA_ZST" />
+    <SimpleProperty name="IWA_UGR" mapping="IWA_UGR" />
+    <SimpleProperty name="M_INFOQUEL" mapping="M_INFOQUEL" />
+    <SimpleProperty name="M_PFLGSTEL" mapping="M_PFLGSTEL" />
+    <SimpleProperty name="M_LEBZSTAR" mapping="M_LEBZSTAR" />
+    <SimpleProperty name="M_LEBZENDE" mapping="M_LEBZENDE" />
+    <SimpleProperty name="M_GUELSTAR" mapping="M_GUELSTAR" />
+    <SimpleProperty name="M_GUELENDE" mapping="M_GUELENDE" />
+    <SimpleProperty name="M_BEARBTAM" mapping="M_BEARBTAM" / -->
+
+    <!-- XE_Freizeitweg -->
+    <!-- SimpleProperty name="IFW_SCHL" mapping="IFW_SCHL" />
+    <SimpleProperty name="IFW_WBZ" mapping="IFW_WBZ" />
+    <SimpleProperty name="IFW_WGV" mapping="IFW_WGV" />
+    <SimpleProperty name="IFW_VARIA" mapping="IFW_VARIA" / -->
+
+    <!-- SimpleProperty name="M_INFODAT" mapping="M_INFODAT" / -->
+
     <GeometryProperty name="GEOM" />
   </Mapping>
 
