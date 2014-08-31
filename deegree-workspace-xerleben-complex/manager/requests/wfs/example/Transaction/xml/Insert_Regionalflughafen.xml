@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:Transaction xmlns:wfs="http://www.opengis.net/wfs/2.0"
+	xmlns:app="http://www.deegree.org/app" xmlns:ogc="http://www.opengis.net/ogc"
+	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dgjdbc="http://www.deegree.org/jdbc"
+	xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:sch="http://www.ascc.net/xml/schematron"
+	xmlns:deegreewfs="http://www.deegree.org/wfs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	version="2.0.0" service="WFS"
+	xsi:schemaLocation="http://www.opengis.net/wfs http://schemas.opengis.net/wfs/2.0.0/wfs.xsd">
+	<wfs:Insert handle="insert" idgen="GenerateNew">
+		<gml:FeatureCollection xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:ns1="http://www.w3.org/1999/xhtml" xmlns:xe="http://www.xerleben.de" xmlns:hfp="http://www.w3.org/2001/XMLSchema-hasFacetAndProperty" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="_8a43b385-f551-406c-9b49-c4643200efcd" xsi:schemaLocation="http://www.xerleben.de file:/home/bretschneider/.deegree/deegree-workspace-xerleben-complex/appschemas/xe.xsd">
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_3">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_83e7d0bd-3c0e-4fd2-8afd-8f82947145af">
+			  <gml:pos>10.712692859126062 53.80483634864545</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>efe430ad-3fbb-465d-89ae-302950a4e198</xe:objektUUID>
+		      <xe:objektName>Lübeck-Blankensee</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_de032a5d-0c97-41a4-8a4d-cfd046efe032">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>10.707097559066312 53.80965056315837 10.719953863516476 53.80663691530951 10.723494099197223 53.80738522302753 10.73209444165394 53.80919313182176 10.735035217804246 53.80847789567716 10.734481156883263 53.80705952656224 10.722008152869103 53.80470177404652 10.719236510218174 53.80282910836275 10.711216287337818 53.801360696509484 10.706622868205992 53.79918538286923 10.703603351897016 53.79925325536014 10.702556447484229 53.79929090194732 10.701039199917007 53.79934726932242 10.700605252702877 53.80067755898048 10.700571813158412 53.800782246994615 10.700036760058644 53.80245724623577 10.699333523295802 53.80465039249259 10.69973005858636 53.80507198754608 10.701008576064115 53.80586048689782 10.701723988970144 53.806308509682154 10.707097559066312 53.80965056315837</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_1">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_1a8ffc30-6abd-41b4-84ce-bfbc5ab7abf9">
+			  <gml:pos>9.376846753843084 51.40737913886567</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>86733417-8d51-47b5-8f16-fe4ad7dfcf61</xe:objektUUID>
+		      <xe:objektName>Kassel-Calden</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_b887a192-2ea6-4426-abfe-bd4fb4940707">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>9.37916495048648 51.40532124210719 9.372514154783511 51.40080372072966 9.367519328166404 51.40152051927253 9.366739974112472 51.40337555908909 9.379577772310824 51.41258639666186 9.38405495173421 51.41408703408331 9.38639265384193 51.413885287053255 9.387382018259757 51.41385344100103 9.38841012548114 51.413273083738034 9.383658087000109 51.40987188853741 9.384178131358638 51.40919299388161 9.382136286201396 51.40855274928367 9.378423083022758 51.40565608286583 9.37916495048648 51.40532124210719</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_2">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_49458602-10e2-426a-8d11-4168e5dd7e54">
+			  <gml:pos>10.55405949151811 52.318723625412446</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>7607402f-a11f-48b1-bd91-7b2795c55f87</xe:objektUUID>
+		      <xe:objektName>Braunschweig-Wolfsburg</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_59efd772-f494-4bf5-bc77-79e49aac0fd3">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>10.558958458326101 52.32205300837331 10.559163762400443 52.3219180026309 10.564049852922647 52.32143111687518 10.567440469510515 52.32109521429321 10.568200892046058 52.31926007875014 10.568434920894045 52.31873831315416 10.56852225291782 52.31826159914719 10.568374701447812 52.31774005070413 10.568299154853149 52.31631010014807 10.55937632298955 52.316152961562956 10.559375611962604 52.31561334143292 10.559375187745973 52.31529138420562 10.559375007603094 52.3151546642041 10.557874430982821 52.31524613194657 10.557251531652625 52.3150783290687 10.556805339191099 52.314865229983674 10.556542160250979 52.31469735506614 10.544758400656175 52.31483723497065 10.544260046506798 52.31543999620001 10.541383417260088 52.31509926321198 10.540726603871379 52.31903871438749 10.543309736312256 52.319154727371775 10.543120252785458 52.32052183116144 10.54061070154197 52.32071157341903 10.544398573109449 52.321987329666385 10.547041400578898 52.32287669338741 10.547700669296665 52.321725246730665 10.555937293632763 52.323943119399054 10.557036299018923 52.32249462599148 10.558958458326101 52.32205300837331</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_4">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_b812a098-050f-4ad8-aa1f-c139f654698b">
+			  <gml:pos>8.34037755756951 54.9112283491</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>1b143f51-ca67-44f1-b745-7ec7c3fe0c2a</xe:objektUUID>
+		      <xe:objektName>Sylt</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_841d61b8-d377-4b3f-8c9d-b95748fad070">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>8.332303206847243 54.921591388384165 8.334634597997077 54.9217117482017 8.340557883295368 54.92184606047784 8.341384631305095 54.91685317947042 8.341616037389478 54.91682150990036 8.34298468833529 54.91687157954832 8.349352443600484 54.91789458854306 8.3535695630125 54.91862082145626 8.354521986275927 54.917353301370596 8.35454810266569 54.91622279088367 8.353950030187736 54.916033218104296 8.353973664318017 54.915566873752695 8.354163428955271 54.914896879239016 8.354661572312397 54.913675567953966 8.355105718667213 54.912596958946565 8.354766310010362 54.9076096449023 8.358071271708845 54.9069471031022 8.357043440527487 54.90570911897764 8.354710715629057 54.90593919065572 8.354247064239665 54.90494404089707 8.357850621335048 54.90206946994979 8.35272882678179 54.90017020739572 8.349784209788933 54.90294804118245 8.341021540457279 54.901893459810985 8.340026428034449 54.90185866153088 8.33863538109581 54.90195178784476 8.337491961915033 54.90207602537115 8.336153075504741 54.90236748175753 8.335251772827238 54.902630446719655 8.334438795031604 54.90299364119768 8.333647298092313 54.90354569190624 8.332899259743785 54.9041613080672 8.332418999146409 54.90471863777597 8.33209253099254 54.90531448310417 8.331902001187212 54.905993421628615 8.325515658904159 54.907195225204404 8.324915164137243 54.90827108544383 8.325521206329425 54.91012149340553 8.32555897607147 54.9109030465247 8.325450292810777 54.91150258371326 8.324919927020165 54.91212186049947 8.32429338036127 54.91279335050587 8.32410545670637 54.913418462046586 8.323492079047751 54.91565198299337 8.323820643717438 54.9162320450898 8.324282979776218 54.9166348686154 8.324550671315688 54.91718696217771 8.32463062458538 54.91775380620301 8.324656597768339 54.91815816371228 8.32493628147542 54.91847708676501 8.325157378303386 54.91872320357868 8.325215969394488 54.91879600906754 8.332303206847243 54.921591388384165</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_5">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_ace55d31-593a-4eab-8a5b-16a5a140c57b">
+			  <gml:pos>12.71146857089753 54.34012640967849</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>cb2a39d3-db9d-4d08-8a2d-427537d8ff30</xe:objektUUID>
+		      <xe:objektName>Barth</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_0743518a-546d-4bf1-b6e8-3f76a9f4c40c">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>12.697194181657348 54.33575291430615 12.699333813150341 54.33671258272611 12.699288728973885 54.3373331645311 12.694982944745531 54.33730057990746 12.69487775692681 54.339152807570436 12.699705005962066 54.33915831683739 12.699692249944045 54.34161075744674 12.702224406341939 54.343665068886644 12.703619649613685 54.34613368361179 12.704649792912859 54.34598087844957 12.706844921767082 54.34587792155633 12.725041727457791 54.34455139418993 12.725710332492273 54.33994948090533 12.725634958610772 54.33938491157847 12.725603337085333 54.33877465484695 12.72460103167086 54.336043706639494 12.715346608652345 54.33573095458326 12.715352792921102 54.33525476838054 12.708983660391542 54.33544762271178 12.708994688070327 54.336857690984864 12.70411885953394 54.33679949858257 12.704535091374243 54.33472621871883 12.697558445955359 54.33325838877362 12.697194181657348 54.33575291430615</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_6">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_bcd0039c-04c0-41de-9ae7-1a7c4c033eda">
+			  <gml:pos>8.08167936661029 48.777916749488995</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>b536d1e5-c756-4e92-8b1d-8fea1393fe6d</xe:objektUUID>
+		      <xe:objektName>Karlsruhe/Baden-Baden</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_ce88be89-fd8b-49b1-9bca-1e9995ae6c94">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>8.091796017183638 48.7937594514665 8.09743811528558 48.791478982299516 8.096816744400929 48.79104236037006 8.096234477342644 48.79050364126369 8.095952531381636 48.79004878400934 8.095881907326872 48.78958301767153 8.096000303130811 48.78916243730286 8.095317796961522 48.7874379420664 8.096163156084906 48.785836313953936 8.095551676920925 48.784776912187716 8.093376326704032 48.78490941820877 8.089433306263416 48.78074069591867 8.09042057589425 48.78005125189038 8.087533358012546 48.7774503904926 8.086650285911043 48.7772716204164 8.086071718234624 48.776418776830305 8.086290620161726 48.775637893959896 8.085779263581642 48.77505542451697 8.084972315005386 48.77534739573991 8.081376637065597 48.77160295888743 8.082919669084852 48.770993718915555 8.081467327438084 48.769057575807864 8.078350425490415 48.76872786072305 8.077480578572063 48.767588415133986 8.07966838402412 48.76685199196868 8.079015672654332 48.76621879912909 8.077488622820638 48.76578900524715 8.075865574958945 48.76558267048285 8.075107628771795 48.76522422164208 8.074874282859376 48.764445310558216 8.07430746647393 48.76380309106691 8.07354776424804 48.76348058447905 8.072673596553141 48.76354248451946 8.07145336326332 48.76399272840029 8.065706353979797 48.7665034535524 8.065649515720281 48.76776011807297 8.071591864375877 48.77424657311684 8.072615942049563 48.77393562969066 8.075879987312607 48.77729832265111 8.074559752537342 48.77783641100947 8.076045409617882 48.77955751347911 8.077760011211662 48.78057096575998 8.078604259403129 48.780256048386036 8.079666462081388 48.78135049323779 8.08083913170514 48.7835159344593 8.085964016043732 48.7883422252463 8.087228531727867 48.79002529116966 8.091796017183638 48.7937594514665</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_8">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_6e6535d1-e003-453c-ba1a-589484f2a408">
+			  <gml:pos>8.656181453366422 53.77043617612132</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>c3eca5b7-66c4-4bde-aae2-879ba2406852</xe:objektUUID>
+		      <xe:objektName>Nordholz</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_c49d4c02-9c9b-484f-b3c0-e9dea65af7ed">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>8.629087770780721 53.762435905077474 8.632285590858361 53.76744484228215 8.652128027949123 53.76990774023102 8.65182279316119 53.77284013972683 8.651641399658194 53.7745825912634 8.645710182806718 53.773496582436096 8.641209917583483 53.77194643984822 8.635767754740584 53.77291626010427 8.637530563191069 53.77568369622399 8.63855618900031 53.77724480560632 8.64017952381684 53.776891698568924 8.643075359979587 53.77907390079337 8.641168120050528 53.780033891251215 8.643974760691377 53.78217877939959 8.645163271971649 53.783131159998675 8.648051367876356 53.78551081349806 8.655640501641168 53.783323222374136 8.663957575333542 53.78292529645594 8.67059902429897 53.781594483980996 8.67232509478363 53.771923315490376 8.673997483940262 53.771112172484216 8.681086626673684 53.771360070283166 8.681316091271057 53.77043137594767 8.681660426502063 53.76960709058591 8.677542278293163 53.76760554898481 8.678089084551026 53.76432443651025 8.67486491006544 53.76416920983207 8.675191293122326 53.76325736137247 8.669474865356618 53.76285861664149 8.670574781642216 53.760142855850596 8.66905733171679 53.76014263344222 8.666267640234178 53.760142175422125 8.659002100529397 53.75765305738551 8.655516551451601 53.755803906453814 8.650881783028435 53.75852982752181 8.650402219197428 53.75946630018283 8.644741593898132 53.760621966606934 8.642661133530222 53.76104018161088 8.63978479884125 53.76162616916371 8.638897248251356 53.7618105697016 8.635082052180568 53.762004912718446 8.629087770780721 53.762435905077474</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_7">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_3259df27-42a5-4270-a202-56fc7853fe05">
+			  <gml:pos>11.783439593090897 53.42785528312114</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>f5d97384-e3ce-4dc8-a280-99aef025f85a</xe:objektUUID>
+		      <xe:objektName>Schwerin-Parchim</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_334cbfff-61c3-48c6-9fad-ccd0f4deb566">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>11.766095294018712 53.42720719656969 11.777821810284653 53.43062568451338 11.777064143537768 53.43174600851862 11.781956547238805 53.43304359974552 11.783096324566571 53.431481021073985 11.789673778914851 53.433635441381625 11.791700575362276 53.43422276981737 11.790776868349075 53.435446051840664 11.792429367337148 53.435968091637655 11.79389102761802 53.434247324025726 11.800211835024045 53.43625698765444 11.801245562705759 53.436093269007486 11.81036475960359 53.43452038461707 11.809606989511085 53.43130381499127 11.807612815067996 53.43003970504174 11.806445793100712 53.42976447420911 11.8004622183829 53.42834984436972 11.795614380096481 53.42720344232495 11.79244665789415 53.42696705271702 11.790490590197958 53.425706548911975 11.78494936941187 53.42423812702145 11.77837535761657 53.42249556151916 11.773955216320546 53.4210000146733 11.75750541492127 53.41876036041879 11.755108436326342 53.4222812116648 11.76039068653777 53.423881048447846 11.760390256991622 53.424914685815104 11.765846592607069 53.425227207313256 11.766095294018712 53.42720719656969</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_9">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_438bfc3e-9899-4c6d-a4de-d4cc2471a408">
+			  <gml:pos>7.399746233660876 49.21042254892601</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>978a4291-fd1b-4a15-87fe-a2adb7430924</xe:objektUUID>
+		      <xe:objektName>Zweibrücken</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_04defc9f-523f-4387-b7f0-4964390d9562">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>7.405763114882697 49.222643020124046 7.4075042644503934 49.22035926080145 7.409157455134449 49.22243948614991 7.413424897538768 49.22083741155462 7.403269266892098 49.209276841676584 7.393221839845277 49.19781730401933 7.3922876394023795 49.196786346573404 7.389919450399628 49.195634479925026 7.388504370283187 49.19390873940282 7.386103572439117 49.19461387270619 7.386115747101906 49.195100146968585 7.38818060399758 49.19824459339318 7.390318636143012 49.20171614206416 7.391332679767211 49.20260854133678 7.39237166638425 49.20375370506355 7.3930195326496575 49.20457291967671 7.393349261611115 49.20521226174416 7.393473841991973 49.20583691760359 7.393439052318721 49.206376132374835 7.39320547881562 49.20680180528051 7.392758618610347 49.20733860785585 7.391903117178235 49.208458282916126 7.391665458640639 49.208946861392114 7.391802003167577 49.209598860960504 7.392091385484666 49.210012014600636 7.392523164300203 49.21034808563201 7.3934128352871005 49.210615810994845 7.39484270569823 49.210817458282065 7.3964578649699115 49.210916178293346 7.397666542249988 49.21113867747703 7.398424115069148 49.211537752836634 7.398974024778482 49.21217416198142 7.399228754337123 49.21312651564358 7.399174342847469 49.21397129084952 7.3989554839339915 49.21459544891678 7.402278448008727 49.217415161313646 7.401705639814758 49.218200607179185 7.401884282271346 49.219147629456316 7.402657346651961 49.219340483543995 7.402566048843415 49.22008115949607 7.400894203854518 49.22029224912514 7.400706652175448 49.22154913245544 7.402053236967911 49.221982455835835 7.401805599982381 49.2224040932211 7.402394774657038 49.22342082178619 7.404578895263211 49.224600012225814 7.405763114882697 49.222643020124046</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_10">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_17fb3f15-1e44-4f11-b779-d73f8c8491fd">
+			  <gml:pos>8.08166526827809 50.70823212627145</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>80805898-0beb-454d-992c-598713b70379</xe:objektUUID>
+		      <xe:objektName>Siegerland</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_1fde7a85-11d3-4688-bce3-22dff0adc4ee">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>8.070237670226675 50.7155846117599 8.077077821621298 50.716575494021725 8.077563793015374 50.71557979867432 8.076511797548989 50.71535519228826 8.077333849358808 50.713824799287565 8.08424231682194 50.71047621649585 8.093533550594556 50.705988485662964 8.098391696785566 50.70359572382246 8.092309738685183 50.70360440450392 8.092382834862525 50.703011765914866 8.09065523529668 50.70297581659091 8.090647317019338 50.700932102930174 8.085285313177208 50.70319700010409 8.082479451908192 50.702904364664256 8.080467232553357 50.70511045044488 8.078555840053886 50.704660738139914 8.077021955136036 50.70538370946422 8.075063772149642 50.704846813037356 8.074212517368677 50.70540513480966 8.07338738644697 50.70691604374073 8.075468595533067 50.70797015081639 8.07122483801594 50.710239839343394 8.07195513020936 50.71418924771251 8.070060676659024 50.71462663229439 8.070237670226675 50.7155846117599</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_11">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_48166bdf-2220-4367-ad9a-00a3f4e84fcb">
+			  <gml:pos>7.613639791411756 51.51796064390993</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>d5e6d0cb-cb26-43e2-908d-cc760786f87f</xe:objektUUID>
+		      <xe:objektName>Dortmund</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_871bb9d9-4337-486e-bce6-9c9e53c84750">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>7.619907804636416 51.51723628615101 7.619135386232887 51.51712736360817 7.61842569034043 51.51693893958604 7.617608078900818 51.51663082603518 7.615094878827463 51.51529081317008 7.611660623266183 51.51368506664019 7.61101600363859 51.513381146620645 7.6075949711580915 51.512027695514746 7.605906424310953 51.51134696877621 7.603793114448826 51.51053872646277 7.603018366398919 51.510240563500595 7.602427501288538 51.51000094041154 7.600612293336154 51.50927199978755 7.597812248787016 51.508374708025244 7.596002650934139 51.5080149762461 7.593564532444938 51.50778376298026 7.594741162283647 51.50856909372966 7.597676441534164 51.51143256184501 7.596453430618824 51.51411248007844 7.596157400755075 51.51582485566467 7.601218439885469 51.51634567018493 7.602222708958599 51.51986373441722 7.6026644390046005 51.51949645350612 7.603460142797404 51.51923691379122 7.604416824299372 51.51917039902021 7.605965635622027 51.51932550515286 7.606945689820091 51.51957466532424 7.619021958811806 51.523526008918765 7.625202167670931 51.525549679677695 7.628268043432752 51.52660581429538 7.628623951864859 51.525993258152965 7.629158641111794 51.525060937294235 7.6341849076011234 51.5263897519656 7.634274821541419 51.52495140833101 7.634423099325791 51.52396464987296 7.634405152522707 51.52355906390786 7.634292875481428 51.523277229866316 7.633846346871453 51.523032280820175 7.63211693804662 51.52253102362469 7.629716699796224 51.52168027373235 7.62861241680464 51.52133824573006 7.628428465081297 51.52127974178223 7.628108297721998 51.521091869875534 7.628133074159615 51.520696326142684 7.628570892164507 51.52015779394443 7.629012077352811 51.519565322214525 7.62969077538793 51.518636509050985 7.625672241672384 51.51805234057063 7.624042028212307 51.517814476076914 7.623069558963871 51.51767368523646 7.619907804636416 51.51723628615101</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_12">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_b2f24de6-0f0a-40fd-beed-9e5187aefd6c">
+			  <gml:pos>9.511593598345048 47.67172724595493</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>21f5fa52-a409-49f5-a9d1-0b0ffb29eb13</xe:objektUUID>
+		      <xe:objektName>Friedrichshafen</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_96406681-12b5-4d16-b46a-4b8f6e2f396e">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>9.495739741562744 47.66706676769199 9.496078909979484 47.66805846133582 9.497295016880157 47.66779107533227 9.503530956236936 47.67063429805333 9.505139291394888 47.67204198918544 9.506983225698326 47.67311961122343 9.505771518060463 47.67435741939056 9.507949400689022 47.67524003917909 9.509757889114931 47.675966477023636 9.510298345471982 47.67622302759433 9.51071817364143 47.67652341437183 9.513163490005288 47.67668041284958 9.513259028681226 47.67589042355268 9.514864796556258 47.67625473986348 9.52658614441683 47.67891319813865 9.528540562925956 47.67696250647099 9.525737915323084 47.67534676754494 9.526292894974238 47.6748664369407 9.52200575943849 47.67296770614999 9.51521332341835 47.66994077633448 9.512588981878773 47.66876667392683 9.51240417993241 47.66869310188587 9.510465582800833 47.66783072375277 9.508078562071177 47.66677550002578 9.50755098296382 47.66654601766499 9.503027124617166 47.664581472781684 9.502842352406212 47.6645078847727 9.502670520954025 47.664452388866046 9.502458425826731 47.664414497506314 9.501622085280355 47.66432594679039 9.501409630192576 47.66430602391512 9.500771723655797 47.66427320858413 9.500572750938792 47.66424442092809 9.499334700993177 47.664831880136866 9.498247620598537 47.66427974304695 9.496440099274135 47.665985806971335 9.495328444843722 47.66635300322309 9.495739741562744 47.66706676769199</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_13">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_c47af4ed-b659-4f73-941c-ebec5685e38f">
+			  <gml:pos>10.234543060386759 47.984837913512855</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>0bfea753-09c4-46b4-ab63-a90d5f0f5d5b</xe:objektUUID>
+		      <xe:objektName>Memmingen</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_5c05a176-8f5e-4c68-ad9b-f4b47029483c">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>10.221608480368635 47.982647724835886 10.222820191856135 47.98439149884284 10.222397806482814 47.98513055174086 10.226566790557587 47.98663313047515 10.226794129142188 47.98753391956633 10.22772265924406 47.98777504483308 10.227313628917779 47.98959221455207 10.230376365125437 47.99024697045629 10.233519426659962 47.99091981336299 10.23415704422934 47.98938432436693 10.242145814049262 47.9903472169409 10.256230740682456 47.99608719097635 10.257347326609285 47.995055986027204 10.256713803127871 47.99317597479698 10.253274384843749 47.992763797805424 10.25001899569651 47.991541649886976 10.25045609312975 47.99089703916807 10.247147686560872 47.989675799204825 10.246489707545772 47.99021649741088 10.23829305847653 47.987138167656965 10.239801951760182 47.98283627579631 10.237942307542323 47.98258915303283 10.238258859696959 47.97843724153623 10.23937062363833 47.97577931608805 10.237418357877077 47.97537916141343 10.237289514403606 47.97695182767947 10.23566793052324 47.977289486095174 10.225292949691116 47.97734484739053 10.221608480368635 47.982647724835886</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_14">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_3d7a648b-0717-4c95-910b-80a71cedce73">
+			  <gml:pos>6.938384097243436 51.40295453317617</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>4e8f023b-07aa-4656-8185-832fa28b9c6f</xe:objektUUID>
+		      <xe:objektName>Essen/Mülheim</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_8204d97b-b96f-49c7-8076-dfc2dfa887e7">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>6.944862610235629 51.39998189312984 6.942255387457872 51.399993023692296 6.940120659214304 51.39966713205016 6.936302577739398 51.398209256979925 6.933513860041005 51.39703471870754 6.93166561175323 51.39784328848489 6.929219804878383 51.39707538711461 6.926743855489428 51.39891866313011 6.9252085554207214 51.40273612395549 6.931307986463163 51.40448887078811 6.932854077204467 51.405535646904895 6.9346946966275445 51.40594281092216 6.936264179285958 51.40650385207656 6.938087807402608 51.407874228411 6.938391636342638 51.40785641809206 6.938806234643203 51.407896008751386 6.938960806645805 51.40794573084787 6.9401837221796026 51.40833407868028 6.941533439796291 51.40857312999208 6.9424530428500875 51.40860098108597 6.9438201671205375 51.4086153506024 6.945140940396402 51.408484185278716 6.946396117038035 51.4082699557479 6.947352318770258 51.40801064329259 6.94830108701074 51.4076610260637 6.9491884146213705 51.40717443573345 6.949835628358485 51.40662653962355 6.950233709810645 51.406134163221594 6.950485326640445 51.40567338924787 6.9507712266236386 51.405141592669295 6.9508608313392966 51.404540814274355 6.9507226370350805 51.40390613139391 6.950393926341533 51.40294143012048 6.948346335159096 51.4022310145424 6.9473566028380125 51.40143546634617 6.947113483556604 51.40048234868645 6.944862610235629 51.39998189312984</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_17">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_8c70372c-f3a2-40ab-b5c6-f78b46a16c34">
+			  <gml:pos>11.417906807810365 51.85635501754705</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>8451130b-a611-47ee-bbde-9a4bd775171d</xe:objektUUID>
+		      <xe:objektName>Magdeburg/Cochstedt</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_d48bf480-fdd8-42dd-b36d-480669237b35">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>11.397241924870121 51.85546351002721 11.422526957118038 51.85903819824669 11.423618413016543 51.86061785475122 11.42926803921162 51.861478554829255 11.433442940149703 51.86100499664913 11.433960944488359 51.86075802564978 11.434606364576025 51.860348117480626 11.434966958305665 51.8602193316961 11.43540277300458 51.86021589950248 11.439206605626643 51.86077962654086 11.439658623633807 51.86085701672104 11.440183465806022 51.860942824875 11.441393053272654 51.85760463247093 11.438477407170948 51.85712392254068 11.438559620341437 51.85617866685374 11.431406805246262 51.85522741197774 11.431018114349502 51.856112091716035 11.392980770237173 51.85079062663049 11.39176499603614 51.853984415930874 11.397286909970937 51.85479745213338 11.397241924870121 51.85546351002721</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_18">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_dc1cb486-9691-4562-8c18-05a1fc22448b">
+			  <gml:pos>7.263238191230345 49.945864383530505</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>6ed32de1-3851-4715-9661-0b4dc7bde591</xe:objektUUID>
+		      <xe:objektName>Frankfurt-Hahn</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_4f619d5a-0347-49ea-9994-d8b1ff5c5215">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>7.2492594205953935 49.93114289361873 7.248934472757824 49.92998087603525 7.248573437911164 49.92914203402521 7.248125178403386 49.92835473342059 7.247791132892398 49.927904178446404 7.246604998759477 49.92692440584894 7.241859731441388 49.9285808293253 7.24411954060808 49.93102301771141 7.243862099426454 49.93253763323993 7.24812927963005 49.937045420545964 7.248465473483398 49.937433265414754 7.252734647591025 49.941742312453144 7.253745031497082 49.942861297852964 7.2586349523055524 49.94788171453097 7.260130763427423 49.949275141916324 7.261514292179615 49.95061360228429 7.2618001574848146 49.95089014331251 7.262393912675547 49.95149187486584 7.26341811839085 49.95250258237506 7.267649097157937 49.95678492196228 7.268048953661457 49.95719100809374 7.272526591218543 49.96174877493646 7.273078141776987 49.96225971401239 7.275485984274768 49.961751535870754 7.280002138606955 49.959798982700114 7.281900472275393 49.95897908423729 7.280814041527354 49.958326994846225 7.283617993296048 49.95732553287105 7.282019853919987 49.95639784004045 7.280437289390899 49.957091578709296 7.279774985012571 49.956361409551704 7.280673660767785 49.95566636333532 7.280512832158371 49.953923729317204 7.277519807500546 49.951137387911395 7.27557731594948 49.949326303553285 7.274358429969839 49.94980510785088 7.271253517491267 49.94682629798615 7.270688237108929 49.94631495662751 7.26946633645689 49.94519961651338 7.267598198548404 49.945786005281064 7.266081947596237 49.94407690013876 7.266617070190768 49.94359678373063 7.259584285362363 49.937462087773596 7.259814035395818 49.93655004356773 7.2588189430126 49.936206518221226 7.259194699587707 49.93458718037015 7.260061730223956 49.933945436290266 7.257879383617617 49.932397362362536 7.253607641747146 49.93386063389819 7.25209589014935 49.93270980635457 7.251844246438306 49.93251350574524 7.2510995229476976 49.93190801121112 7.250271580203527 49.931234833120456 7.2492594205953935 49.93114289361873</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_15">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_9e5d8c01-da5c-4cf9-aa34-e4e06b708648">
+			  <gml:pos>8.618045816162017 51.614219351873615</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>0f47eaef-3cc8-4566-9b70-714e98634abd</xe:objektUUID>
+		      <xe:objektName>Paderborn/Lippstadt</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_e375387c-1250-4ef2-a7eb-4fcf1004a590">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>8.60953040484298 51.607787273236504 8.60882666784394 51.608378952047275 8.605160154246416 51.60687128447064 8.599205961861324 51.60442675935652 8.595616791144801 51.6080226276525 8.597748552574679 51.60889392668577 8.60131611281943 51.61034623799474 8.621390354898212 51.61849663507472 8.621228580203535 51.61926799055439 8.624585771248013 51.62059923366184 8.634773007349748 51.624621192715104 8.636247243433814 51.6232136060512 8.638186841168633 51.62138138140977 8.639510177619645 51.62012436185105 8.635833079820337 51.61918446129351 8.62841629758503 51.61622767353238 8.62856052539377 51.6153523944557 8.624410422129369 51.61343016003468 8.623368576401036 51.613717380292734 8.622307133615013 51.61316046488543 8.623004309633039 51.612023962254035 8.617467005628887 51.60957312225453 8.618129762908538 51.608807678436555 8.61496411599357 51.607451190459656 8.613939723217708 51.608460742205324 8.61237310983155 51.60894866184774 8.60953040484298 51.607787273236504</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_16">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_006df01c-e15a-41fd-ac0d-fece396c8e72">
+			  <gml:pos>14.152837390051902 53.87848130277747</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>88846be6-bf17-4b29-9626-a8f647acb4a0</xe:objektUUID>
+		      <xe:objektName>Heringsdorf</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_40ae7564-c15c-4a1b-b4ca-b837bd826451">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>14.144450929859692 53.876686241003455 14.142816139276295 53.877156867927916 14.141672592672451 53.877496163018556 14.140195736311174 53.87785419968349 14.138296711920624 53.87826054781058 14.137430322943402 53.87845678189368 14.134125870912758 53.87898511634381 14.134464054647598 53.880297340901905 14.128998672573724 53.88156321709969 14.129202282620207 53.8821778530232 14.130662775317507 53.88325945561773 14.138519758689323 53.88275454474775 14.141958189701658 53.88253342175526 14.146212030800651 53.88225560796383 14.146257530286828 53.88168235405606 14.152052743903345 53.88223348730943 14.153693997111928 53.882177973449565 14.155769802420563 53.8825868357687 14.155793127429476 53.88123704271169 14.157858325135656 53.88089477955443 14.16004421786699 53.88010651101703 14.160463531814843 53.880493955997196 14.163314386904581 53.87999035968722 14.166545812714952 53.878599958445164 14.16801041514697 53.877558409041306 14.169231499119885 53.877320523387105 14.17290706932023 53.876604377243076 14.17474497135529 53.87637917947695 14.175131373757303 53.8762688218579 14.174305936258852 53.874263836091714 14.173311674176174 53.87411816665534 14.16650893200207 53.87352871520336 14.165006124554775 53.87366068949155 14.162660701732452 53.87386662179677 14.160261908577592 53.8739372687112 14.152173808578679 53.87512850280685 14.151977632161168 53.87731982618044 14.146812843855832 53.877624318249104 14.146624522159122 53.876469610842335 14.144450929859692 53.876686241003455</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_21">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_abc9b307-6c17-488a-8a92-37747417aa47">
+			  <gml:pos>12.277665125679441 53.919448137250086</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>30660102-005b-4a20-a70e-ea5da8217d76</xe:objektUUID>
+		      <xe:objektName>Laage</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_27dfd214-2458-47f4-8752-ecc7ebcd6e7c">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>12.241611316763535 53.91994120617819 12.24661914411845 53.92352137635109 12.24728180210742 53.92394125024314 12.254587331863485 53.922925661410716 12.257639938308666 53.92430901195248 12.260612038748599 53.92489464719129 12.263360759008291 53.92680764674225 12.267595444748073 53.92985647261691 12.276530317177489 53.92980125091209 12.287738263191525 53.92867334555612 12.288995137274503 53.93090013238445 12.291061313632953 53.93068936049084 12.292316853094853 53.930859990644564 12.293456238245666 53.93116705791651 12.294623472681103 53.931410817610875 12.296978569541945 53.930023845556285 12.299551204539146 53.929616982330145 12.300042851958663 53.93065822357346 12.301871223594754 53.930317824615486 12.302883250053643 53.93012347802132 12.304008501430465 53.93008921693807 12.3048981086118 53.928782460850485 12.307217762040592 53.928182759607715 12.305408123034292 53.92520356400122 12.301709062489483 53.91999987622329 12.31019412418921 53.91656683409919 12.313902211079657 53.91625611955792 12.313493848351817 53.91457888171508 12.310411351196977 53.91482343510383 12.308756269679161 53.91453367239733 12.305238442895819 53.91244507977369 12.305187124879698 53.910049419007215 12.302517940694132 53.9086045995813 12.298750322935467 53.90863055931125 12.294876498394794 53.91029188965985 12.29438193476947 53.90974185872439 12.293024985703314 53.91041733765414 12.292243160189747 53.909776756433125 12.28712573807532 53.9124589096991 12.283574803823884 53.912704954492106 12.278024356743561 53.9132295115043 12.276673300070023 53.909508047868144 12.274008126277337 53.90870398608021 12.271150694633732 53.908789593306786 12.270270792048299 53.909295501992325 12.269915871489896 53.91007081214282 12.258397681162535 53.91080457418208 12.251289750170198 53.91187470613506 12.249946757055202 53.91331999067962 12.240928926581848 53.91411275995453 12.240661804663107 53.91504196505388 12.238596080632412 53.91946983600354 12.241611316763535 53.91994120617819</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_20">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_b9bd1ddb-cbb4-435a-9bd0-9b4e025be12b">
+			  <gml:pos>9.391692376006453 51.41965086030359</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>be399a0a-61ca-4963-87fa-3cddd679da81</xe:objektUUID>
+		      <xe:objektName>Kassel-Calden</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_abaffc82-ad85-4092-8a94-84038130e931">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>9.379176077599682 51.42308516494695 9.40515988996381 51.42161880931266 9.406343989569287 51.42226308037858 9.413813039851663 51.42201567896335 9.413743062023313 51.420465231169665 9.414836787100313 51.42042533524432 9.414716628957825 51.41874110830417 9.411436752917698 51.41881077923628 9.411235418887749 51.41830897885245 9.409863251938802 51.41772967050797 9.407137458187531 51.418037659336214 9.405977723171004 51.41749360951714 9.404486360208223 51.41744639504656 9.40370767792428 51.41768910637482 9.403080116705416 51.41829984305953 9.400279885567093 51.418373675167715 9.400086709191731 51.416422110906986 9.393283818551202 51.416708235311205 9.393229552691325 51.415641188553145 9.38589545766259 51.41585522454245 9.387382018259757 51.41385344100103 9.38639265384193 51.413885287053255 9.38405495173421 51.41408703408331 9.38310552886461 51.41419031855599 9.38127013010214 51.41449227071155 9.379566227566013 51.414913120528574 9.379036602252533 51.415060789985574 9.379090885464468 51.416250635820255 9.38253958962571 51.41629920761144 9.382617566341375 51.419307413192676 9.37330036050928 51.41976806207341 9.37211775790705 51.4212565465106 9.370141328104184 51.42142088452771 9.370243037345475 51.42270504175344 9.371201974900586 51.42273091498337 9.37170713605029 51.42386895990241 9.378406095259395 51.423676167117655 9.379176077599682 51.42308516494695</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_22">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_4d584931-d063-4c37-ad7b-b8d293bca79b">
+			  <gml:pos>6.13910221156059 51.60249188359839</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>f498953d-f988-4359-ae48-727f2e888bf0</xe:objektUUID>
+		      <xe:objektName>Niederrhein</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_c3f57707-4845-452b-b7a1-a19cac43615c">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>6.149254629712885 51.608891863149495 6.145717777542533 51.60646063187701 6.14318340525031 51.60653395450494 6.143110646900787 51.60488599455699 6.160500251588093 51.60443024849661 6.162240254002505 51.605306706309015 6.1643869355645675 51.60449345417152 6.164280899650894 51.60194818834803 6.1649584909578925 51.59999046883511 6.16444421700993 51.59808806553594 6.156596962460562 51.5982859509721 6.15577082925192 51.59747624150616 6.153412592237931 51.5988765769467 6.153015461682117 51.59791551732675 6.150078386832346 51.59790149070794 6.150051950153006 51.59681005606718 6.148587894161291 51.59683714963891 6.148341908604076 51.596837084510035 6.145569501753651 51.59510355345961 6.14179584692077 51.597199148513575 6.139481378616738 51.5958248519493 6.1375439575776 51.59687070018584 6.135299157270844 51.59552593005963 6.133068049938011 51.59419063114186 6.123367370764589 51.600454979433756 6.116423922255601 51.60057560698886 6.115469728416475 51.60119014756309 6.116962401039924 51.60317232992162 6.117404923169702 51.605289443076174 6.117260299293959 51.606393214550415 6.1164555487937475 51.60846035669224 6.12264025080873 51.60963648298664 6.123093074201684 51.608875852272654 6.1247377993063505 51.60927488660508 6.124717312522391 51.60778686317263 6.129870400500714 51.60772991521217 6.130003695479457 51.607002601472566 6.133513914543793 51.606625583853265 6.133665389273327 51.607881836021 6.136153931858976 51.60797275467868 6.138567696393541 51.60941524930639 6.138193882961447 51.61105767849635 6.14268727690027 51.611189943162955 6.143683969772147 51.610415534755596 6.1435482559787085 51.60899088457448 6.145874821623855 51.608502174612354 6.1458327033604565 51.60951464526363 6.149254629712885 51.608891863149495</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		  <gml:featureMember>
+		    <xe:XE_Flughafen gml:id="xerlebenid_19">
+		      <xe:lageAnfasspunkt>
+			<gml:Point gml:id="_a9cc38a9-475d-409b-88a5-e2d3915de362">
+			  <gml:pos>13.306628827911132 53.60169097606654</gml:pos>
+			</gml:Point>
+		      </xe:lageAnfasspunkt>
+		      <xe:metaInfoquelle>© GeoBasis-DE / BKG 2013 (Daten verändert)</xe:metaInfoquelle>
+		      <xe:metaLebenszeitStart>2013-12-31T08:00:00+01:00</xe:metaLebenszeitStart>
+		      <xe:metaPflegendeStelle>GeoBasis-DE / BKG</xe:metaPflegendeStelle>
+		      <xe:metaZuletztBearbeitetAm>2013-12-31T08:00:00+01:00</xe:metaZuletztBearbeitetAm>
+		      <xe:objektCode>66401200</xe:objektCode>
+		      <xe:objektFunktion>Regionalflughafen</xe:objektFunktion>
+		      <xe:objektKategorie>XE_Flughafen</xe:objektKategorie>
+		      <xe:objektUUID>16836f47-4916-47a5-b898-447b461b8a36</xe:objektUUID>
+		      <xe:objektName>Neubrandenburg</xe:objektName>
+		      <xe:objektAdresse>
+			<xe:XE_Adresse>
+			  <xe:ort/>
+			  <xe:land>Deutschland</xe:land>
+			</xe:XE_Adresse>
+		      </xe:objektAdresse>
+		      <xe:lageFlaeche>
+			<gml:Surface gml:id="_4019bc96-e97f-44a0-901c-2d1c496d1506">
+			  <gml:patches>
+			    <gml:PolygonPatch>
+			      <gml:exterior>
+				<gml:LinearRing>
+				  <gml:posList>13.292003361593896 53.59849159800374 13.290430049336212 53.59900164344795 13.289719893548256 53.59911581295565 13.288905320077143 53.59905565070924 13.286595951046309 53.59858239984489 13.284836201324739 53.598221744794316 13.283443367201611 53.60127438526275 13.283229601501146 53.60314050430387 13.286315860022157 53.603412638188935 13.287396068217179 53.6037569398485 13.28780824971307 53.603819575727265 13.290243341233047 53.60383654772775 13.291894759222599 53.603655376837345 13.292558993707486 53.60364036708558 13.29323240775808 53.60376901567775 13.294044961749336 53.60418225345761 13.294483733529491 53.604424102909256 13.295125249797634 53.60452648733536 13.295838806015272 53.60457328748675 13.300212046720791 53.60463611527703 13.300648769722878 53.60373405349459 13.30516530534246 53.6047845335914 13.307977947561337 53.60597052428285 13.310412471775752 53.607857428433114 13.316839481972144 53.607171582031455 13.31907229903972 53.60615852867297 13.323625863584605 53.60432810526766 13.324972899479638 53.604585060125316 13.329097009223617 53.60313291352316 13.328127943407981 53.60217496826113 13.324492949992967 53.59996515316849 13.321881560897605 53.600024823033216 13.315669807027305 53.59636639970894 13.313949240901445 53.59614441852497 13.31228480847653 53.596382165196815 13.311127080367616 53.59703660442562 13.305246811213257 53.59814094551546 13.303082903851141 53.59807586071697 13.29778750169639 53.5978247481338 13.295684692338131 53.597368785290996 13.294055530068068 53.5970154950342 13.292003361593896 53.59849159800374</gml:posList>
+				</gml:LinearRing>
+			      </gml:exterior>
+			    </gml:PolygonPatch>
+			  </gml:patches>
+			</gml:Surface>
+		      </xe:lageFlaeche>
+		    </xe:XE_Flughafen>
+		  </gml:featureMember>
+		</gml:FeatureCollection>
+	</wfs:Insert>
+</wfs:Transaction>
