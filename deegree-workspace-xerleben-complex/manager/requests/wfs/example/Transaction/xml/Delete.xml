@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:Transaction xmlns:wfs="http://www.opengis.net/wfs"
+	service="WFS" version="1.1.0"
+	xmlns:xe="http://www.xerleben.de"
+	xmlns:ogc="http://www.opengis.net/ogc"
+>
+	<wfs:Delete typeName="xe:XE_Flughafen">
+	<ogc:Filter>
+		<ogc:PropertyIsEqualTo>
+			<ogc:PropertyName>xe:objektKategorie</ogc:PropertyName>
+			<ogc:Literal>XE_Flughafen</ogc:Literal>
+		</ogc:PropertyIsEqualTo>
+	</ogc:Filter>
+	</wfs:Delete>
+</wfs:Transaction>
